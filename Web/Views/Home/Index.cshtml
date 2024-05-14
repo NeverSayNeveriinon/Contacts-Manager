@@ -1,0 +1,83 @@
+﻿@using Core.DTO.PersonDTO
+@model IEnumerable<Core.DTO.PersonDTO.PersonResponse>
+
+@{
+    ViewBag.Title = "Home";
+    ViewBag.CurrentUrl = "~/";
+}
+
+<form asp-controller="Home" asp-action="Index" method="get">
+
+ <!-- breadcrumb starts -->
+ <div class="flex">
+  <div class="flex-1">
+   <div class="text-grey">
+    <span>Contacts</span>
+    <i class="fa-solid fa-caret-right"></i>
+    <span class="text-grey">Persons</span>
+   </div>
+  </div>
+ </div>
+ <!-- breadcrumb ends -->
+
+ <div class="table-container">
+     <div class="flex">
+         <div class="flex-1">
+             <h1>Persons</h1>
+         </div>
+         <div class="flex-3 text-right">
+             <label>Search by:</label>
+
+             @*searchBy dropdown list*@
+             @*Ex: searchBy=abc*@
+             <select class="search-dropdown" name="searchBy" style="width: 200px">
+                 @foreach (KeyValuePair<string, string> column in ViewBag.SelectColumns)
+                 {
+                     if (column.Key == ViewBag.CurrentSearchBy)
+                     {
+                         <option value="@column.Key" selected="selected">@column.Value</option>
+                     }
+                     else
+                     {
+                         <option value="@column.Key">@column.Value</option>
+                     }
+
+                 }
+             </select>
+
+             @*searchString input field*@
+             @*Ex: searchString=abc*@
+             <input type="search" id="Search" class="search-text" placeholder="Search" name="searchString" value="@ViewBag.CurrentSearchString" style="width:200px"/>
+
+             @*search button to submit*@
+             @*Ex(when submitted): searchBy=abc&searchString=abc*@
+             <button class="search-button">Search</button>
+
+             <a asp-controller="Home" asp-action="Index" class="ml link-hover">Clear all</a>
+
+         </div>
+     </div>
+</div>
+</form>
+
+
+<div class="grid">
+    @foreach (PersonResponse person in Model)
+    {
+         <div class="grid_item">
+             <div class="grid_item_pic">
+                 <img src="default_human.jpg" />
+             </div>
+             <div class="grid_item_info">
+                   <div>  <p class="label">@nameof(person.Name): </p> <p>@person.Name</p>  </div>
+                   <div>  <p class="label">@nameof(person.Email): </p> <p>@person.Email</p>  </div>
+                   <div>  <p class="label">@nameof(person.DateOfBirth): </p> <p>@person.DateOfBirth?.ToString("yyyy/MM/dd")</p>  </div>
+                   <div>  <p class="label">@nameof(person.Age): </p> <p>@person.Age</p>  </div>
+                   <div>  <p class="label">@nameof(person.Gender): </p> <p>@person.Gender</p>  </div>
+                   <div>  <p class="label">@nameof(person.CountryName): </p> <p>@person.CountryName</p>  </div>
+                   <div>  <p class="label">@nameof(person.Address): </p> <p>@person.Address</p>  </div>
+                   <div>  <p class="label">@nameof(person.RecieveNewsLetters): </p> <p>@person.RecieveNewsLetters</p>  </div>   
+            </div>
+         </div>
+    }
+</div>

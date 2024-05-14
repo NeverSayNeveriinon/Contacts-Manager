@@ -1,0 +1,24 @@
+C:\Visual Studio\Personal Projects\Movies\Core\bin\Debug\net8.0\Core.deps.json
+C:\Visual Studio\Personal Projects\Movies\Core\bin\Debug\net8.0\Core.dll
+C:\Visual Studio\Personal Projects\Movies\Core\bin\Debug\net8.0\Core.pdb
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.dll
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\Core.pdb
+C:\Visual Studio\Personal Projects\Movies\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\bin\Debug\net8.0\Core.deps.json
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\bin\Debug\net8.0\Core.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\bin\Debug\net8.0\Core.pdb
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.pdb
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\ref\Core.dll

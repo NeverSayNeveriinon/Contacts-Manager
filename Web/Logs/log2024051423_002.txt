@@ -1,0 +1,105 @@
+2024-05-14 23:50:47.773 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-05-14 23:50:47.790 +03:30 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include(person => person.Country)'
+2024-05-14 23:50:47.850 +03:30 [DBG] Including navigation: 'Person.Country'.
+2024-05-14 23:50:47.973 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Person>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.ID (Guid?) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid) Required FK Index, 2], [Property: Person.DateOfBirth (DateTime?), 3], [Property: Person.Email (string) Required MaxLength(50), 4], [Property: Person.Gender (string) Required MaxLength(10), 5], [Property: Person.Name (string) Required MaxLength(30), 6], [Property: Person.RecieveNewsLetters (bool) Required, 7], [Property: Person.TIN (string) ValueGenerated.OnAdd MaxLength(11), 8] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.ID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: Country.Name (string) Required MaxLength(20), 10] }
+        SELECT p.ID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.Name, p.RecieveNewsLetters, p.TINumber, c.ID, c.Name
+        FROM Persons AS p
+        INNER JOIN Countries AS c ON p.CountryID == c.ID), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Person>, 
+    Entities.PersonsDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-05-14 23:50:47.993 +03:30 [DBG] Creating DbConnection.
+2024-05-14 23:50:47.995 +03:30 [DBG] Created DbConnection. (2ms).
+2024-05-14 23:50:47.997 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-14 23:50:49.012 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-14 23:50:49.014 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-14 23:50:49.018 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-05-14 23:50:49.018 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-05-14 23:50:49.022 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[RecieveNewsLetters], [p].[TINumber], [c].[ID], [c].[Name]
+FROM [Persons] AS [p]
+INNER JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[ID]
+2024-05-14 23:50:49.047 +03:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[RecieveNewsLetters], [p].[TINumber], [c].[ID], [c].[Name]
+FROM [Persons] AS [p]
+INNER JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[ID]
+2024-05-14 23:50:49.066 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.099 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.102 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.105 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.105 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.106 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.107 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.112 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.112 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.112 +03:30 [DBG] Context 'PersonsDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-05-14 23:50:49.115 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-14 23:50:49.118 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 68ms reading results.
+2024-05-14 23:50:49.120 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-14 23:50:49.122 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-14 23:50:49.123 +03:30 [INF] ~~~ Time for GetAllPersons from Database completed in 1808.2 ms
+2024-05-14 23:50:49.130 +03:30 [INF] ~~~ Started 'GetSortedPersons' method of 'Persons' service 
+2024-05-14 23:50:49.160 +03:30 [DBG] View lookup cache miss for view 'Index' in controller 'Home'.
+2024-05-14 23:50:49.163 +03:30 [INF] Executing ViewResult, running view Index.
+2024-05-14 23:50:49.165 +03:30 [DBG] The view path '/Views/Home/Index.cshtml' was found in 3.893ms.
+2024-05-14 23:50:49.190 +03:30 [DBG] Found the endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-14 23:50:49.192 +03:30 [DBG] Successfully processed template  for ContactManager.Controllers.HomeController.Index (ContactManager) resulting in  and 
+2024-05-14 23:50:49.192 +03:30 [DBG] Link generation succeeded for endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-14 23:50:49.214 +03:30 [DBG] Found the endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-14 23:50:49.214 +03:30 [DBG] Successfully processed template  for ContactManager.Controllers.HomeController.Index (ContactManager) resulting in  and 
+2024-05-14 23:50:49.215 +03:30 [DBG] Link generation succeeded for endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-14 23:50:49.216 +03:30 [DBG] View lookup cache miss for view '_Layout' in controller 'Home'.
+2024-05-14 23:50:49.231 +03:30 [DBG] Found the endpoints ["ContactManager.Controllers.AccountController.Logout (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2024-05-14 23:50:49.232 +03:30 [DBG] Successfully processed template Account/Logout for ContactManager.Controllers.AccountController.Logout (ContactManager) resulting in /Account/Logout and 
+2024-05-14 23:50:49.232 +03:30 [DBG] Link generation succeeded for endpoints ["ContactManager.Controllers.AccountController.Logout (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Logout
+2024-05-14 23:50:49.233 +03:30 [DBG] Found the endpoints ["ContactManager.Areas.Admin.Controllers.PersonsController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (area=[Admin],action=[Index],controller=[Persons])
+2024-05-14 23:50:49.233 +03:30 [DBG] Successfully processed template persons/index for ContactManager.Areas.Admin.Controllers.PersonsController.Index (ContactManager) resulting in /persons/index and 
+2024-05-14 23:50:49.233 +03:30 [DBG] Link generation succeeded for endpoints ["ContactManager.Areas.Admin.Controllers.PersonsController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /persons/index
+2024-05-14 23:50:49.241 +03:30 [DBG] Found the endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-14 23:50:49.241 +03:30 [DBG] Successfully processed template  for ContactManager.Controllers.HomeController.Index (ContactManager) resulting in  and 
+2024-05-14 23:50:49.241 +03:30 [DBG] Link generation succeeded for endpoints ["ContactManager.Controllers.HomeController.Index (ContactManager)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-14 23:50:49.251 +03:30 [INF] Executed ViewResult - view Index executed in 91.1112ms.
+2024-05-14 23:50:49.252 +03:30 [INF] Executed action ContactManager.Controllers.HomeController.Index (ContactManager) in 1958.3467ms
+2024-05-14 23:50:49.254 +03:30 [INF] Executed endpoint 'ContactManager.Controllers.HomeController.Index (ContactManager)'
+2024-05-14 23:50:49.256 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+2024-05-14 23:50:49.257 +03:30 [INF] HTTP GET / responded 200 in 2101.8867 ms
+2024-05-14 23:50:49.259 +03:30 [DBG] Connection ID "18230571313875910665" disconnecting.
+2024-05-14 23:50:49.262 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-14 23:50:49.266 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-14 23:50:49.267 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-05-14 23:50:49.268 +03:30 [INF] Request finished HTTP/2 GET https://localhost:46342/ - 200 null text/html; charset=utf-8 2117.3531ms

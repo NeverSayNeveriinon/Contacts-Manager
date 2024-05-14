@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Stylesheet.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" 
+          asp-fallback-href="~/all.min.css" asp-fallback-test-class="fa-sort-up" asp-fallback-test-property="content" asp-fallback-test-value="\f0de" />
+</head>
+
+<body>
+<div class="container">
+    <div class="page-content">
+        <div class="margin-bottom">
+            <div class="flex" id="top-bar-div">
+                
+                <div class="flex-1" id="app-title-div">
+                    <h1 class="app-title">
+                        <i class="fa-solid fa-people-simple"></i>
+                        Contact Manager
+                    </h1>
+                </div>
+                
+                <div class="flex-1 pr" id="search-box-div">
+                    <div class="navbar account-links">
+                        <ul>
+                            @if (User.Identity?.IsAuthenticated is true)
+                            {
+                                <li>
+                                    <i class="fa-solid fa-user"></i>
+                                    @User.Identity?.Name
+                                </li>
+                                
+                                <li>
+                                    <a asp-controller="Account" asp-action="Logout">Logout</a>
+                                </li>
+
+                                if (User.IsInRole("Admin"))
+                                {
+                                    if (ViewBag.CurrentUrl == "~/")
+                                    {
+                                        <li>
+                                            <a asp-controller="Persons" asp-action="Index" asp-area="Admin">Admin Persons</a>
+                                        </li>
+                                    }
+                                    else if (ViewBag.CurrentUrl == "~/persons/index")
+                                    {
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Index" asp-area="">Home Persons</a>
+                                        </li>
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                @if (ViewBag.CurrentUrl == "~/Account/Register")
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Register" class="nav-active">Register</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Register">Register</a>
+                                    </li>
+                                }
+
+
+                                @if (ViewBag.CurrentUrl == "~/Account/Login")
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login" class="nav-active">Login</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login">Login</a>
+                                    </li>
+                                }
+
+                            }
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="navbar mb">
+            <ul>
+                @if (ViewBag.CurrentUrl == "~/")
+                {
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" class="nav-active">Home Persons</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a asp-controller="Home" asp-action="Index">Home Persons</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="body">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+@*Rendering the 'scripts' section of 'Create.cshtml' and maybe other views*@
+@RenderSection("scripts", required: false)
+
+</body>
+</html>
+

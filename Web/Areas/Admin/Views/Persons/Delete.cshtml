@@ -1,0 +1,109 @@
+﻿@*this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views)*@
+@model Core.DTO.PersonDTO.PersonResponse
+
+@{
+    ViewBag.Title = "Delete Person";
+    ViewBag.CurrentUrl = "~/Persons/Delete";
+}
+
+<!-- breadcrumb starts -->
+<div class="flex">
+ <div class="flex-1">
+  <div class="text-grey">
+   <span>Contacts</span>
+   <i class="fa-solid fa-caret-right"></i>
+   <span class="text-grey">Persons</span>
+   <i class="fa-solid fa-caret-right"></i>
+   <span class="text-grey">Delete</span>
+  </div>
+ </div>
+</div>
+<!-- breadcrumb ends -->
+
+<div class="form-container">
+    
+    <a asp-controller="Persons" asp-action="Index" class="link-hover">Back to Persons List</a>
+    <h2 class="text-large">Delete Person</h2>
+    <h3>Are you sure to delete this person?</h3>
+    
+    @*if using tag helpers: ^asp-controller="persons" asp-action="delete"^  equal to -->  ^action="~/persons/delete"^*@
+    <form action="~/persons/delete" method="post">
+
+        @*Hidden 'ID' field*@
+        <input type="hidden" asp-for="ID"/>
+
+
+        @*'Person Name' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="Name" class="form-label pt">Persons Name</label>
+            </div>
+
+            <div class="flex-1">
+                <input asp-for="Name" class="form-input" placeholder="name..." disabled="disabled"/>
+                <span asp-validation-for="Name" class="text-red"></span> @*for showing error message of property*@
+            </div>
+        </div>
+
+
+        @*'Email' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" placeholder="email..." disabled="disabled"/>
+                <span asp-validation-for="Email" class="text-red"></span> @*for showing error message of property*@
+            </div>
+        </div>
+
+
+        @*'Submit' Button*@
+        <div class="form-field flex">
+            <div class="w-20">
+            </div>
+            <div class="flex-1">
+                <button class="button button-red-back">Delete</button>
+
+                @*All Errors*@
+                @* Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other *@
+                <div asp-validation-summary="All" class="text-red"></div>
+
+
+                @*All Errors*@
+                @* Way2: the errors list from controller*@
+                @* @if (ViewBag.ErrorsList != null)
+                {
+                    <ul class="text-red ml">
+                        @foreach (var error in ViewBag.ErrorsList)
+                        {
+                            <li class="ml">@error</li>
+                        }
+                    </ul>
+                } *@
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section scripts
+{
+    @*jQuery Libraries for 'client side validation'*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+            asp-fallback-src="~/jquery.min.js" asp-fallback-test="window.jQuery"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+            asp-fallback-src="~/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"
+            asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script>
+}
+
+
+
+@*##Tips##*@
+@*1) Since no input exist in this view (the 'name' and 'email' are disabled), so user can't enter any value to any field,
+     , so there is no need for client-validation in this view (but i just kept that cause there was no harm) *@
+@*2) *@

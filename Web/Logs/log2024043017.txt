@@ -1,0 +1,543 @@
+2024-04-30 17:37:19.813 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:37:20.314 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:37:20.318 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:39:39.233 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:39:39.616 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:39:39.619 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:39:39.879 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:39:39.914 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:39:39.915 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:39:41.024 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:42:32.612 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:42:33.005 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:42:33.010 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:42:33.234 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:42:33.260 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:42:33.261 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:42:34.201 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:42:34.207 +03:30 [DBG] Created DbConnection. (4ms).
+2024-04-30 17:42:34.215 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.232 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.240 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:42:35.248 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2024-04-30 17:42:35.253 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (14ms).
+2024-04-30 17:42:35.267 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:42:35.287 +03:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:42:35.292 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.298 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (3ms).
+2024-04-30 17:42:35.303 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:42:35.304 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:42:35.305 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:42:35.305 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.307 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.308 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:42:35.321 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:42:35.322 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.323 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:42:35.332 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.333 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.334 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:42:35.334 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:42:35.335 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:42:35.336 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:42:35.341 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:42:35.344 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.346 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 2ms reading results.
+2024-04-30 17:42:35.347 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.348 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:42:35.418 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:42:35.420 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:42:35.422 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-30 17:45:24.517 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:45:24.894 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:45:24.898 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:45:25.148 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:45:25.176 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:45:25.178 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:45:26.219 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:46:39.701 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:46:40.140 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:46:40.146 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:46:40.384 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:46:40.403 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:46:40.407 +03:30 [DBG] Created DbConnection. (1ms).
+2024-04-30 17:46:40.411 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:40.416 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.437 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.454 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.469 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (11ms).
+2024-04-30 17:46:41.477 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (26ms).
+2024-04-30 17:46:41.494 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:46:41.516 +03:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:46:41.521 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.526 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-04-30 17:46:41.530 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:46:41.533 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2024-04-30 17:46:41.534 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2024-04-30 17:46:41.534 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.536 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.537 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:46:41.549 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:46:41.550 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.552 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:46:41.553 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.554 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.555 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.555 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:46:41.556 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:46:41.557 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:46:41.560 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:46:41.562 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.563 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:46:41.564 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:46:41.565 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-30 17:46:41.566 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:46:41.566 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.567 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.568 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:46:41.571 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:46:41.573 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.574 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:46:41.585 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.586 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.587 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:46:41.588 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:46:41.589 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-04-30 17:46:41.591 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:46:41.594 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:46:41.599 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.601 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 3ms reading results.
+2024-04-30 17:46:41.603 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.605 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-04-30 17:46:41.615 +03:30 [INF] Applying migration '20240430141526_someupdate'.
+2024-04-30 17:46:41.670 +03:30 [DBG] Executing 2 update commands as a batch.
+2024-04-30 17:46:41.679 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.681 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.683 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-04-30 17:46:41.694 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-04-30 17:46:41.696 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.697 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:46:41.698 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2024-04-30 17:46:41.699 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '53253ccd-15c7-4c49-8021-a0f1633899c0';
+SELECT @@ROWCOUNT;
+2024-04-30 17:46:41.704 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '53253ccd-15c7-4c49-8021-a0f1633899c0';
+SELECT @@ROWCOUNT;
+2024-04-30 17:46:41.706 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.706 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:46:41.707 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:46:41.707 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '87ef14a9-2d76-43b4-9ca2-61f508d9b016';
+SELECT @@ROWCOUNT;
+2024-04-30 17:46:41.712 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '87ef14a9-2d76-43b4-9ca2-61f508d9b016';
+SELECT @@ROWCOUNT;
+2024-04-30 17:46:41.713 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.713 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:46:41.714 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:46:41.715 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('47058718-89d8-4d7c-8343-ddcdc38a93dd', N'aea67287-15ff-4252-8a41-bc512fdecd4a', N'Admin', N'ADMIN'),
+('c51afe73-9391-4c47-ac0a-c03dbf521ceb', N'f80d7834-5ca5-4f8a-aa3c-61c26d8aa3d4', N'User', N'USER');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-04-30 17:46:41.724 +03:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('47058718-89d8-4d7c-8343-ddcdc38a93dd', N'aea67287-15ff-4252-8a41-bc512fdecd4a', N'Admin', N'ADMIN'),
+('c51afe73-9391-4c47-ac0a-c03dbf521ceb', N'f80d7834-5ca5-4f8a-aa3c-61c26d8aa3d4', N'User', N'USER');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-04-30 17:46:41.726 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:46:41.726 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:46:41.727 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:46:41.728 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240430141526_someupdate', N'8.0.4');
+2024-04-30 17:46:41.729 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240430141526_someupdate', N'8.0.4');
+2024-04-30 17:46:41.732 +03:30 [DBG] Committing transaction.
+2024-04-30 17:46:41.735 +03:30 [DBG] Committed transaction.
+2024-04-30 17:46:41.737 +03:30 [DBG] Disposing transaction.
+2024-04-30 17:46:41.738 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.739 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:46:41.741 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:46:41.743 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:46:41.745 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-30 17:48:12.156 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:48:12.564 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:48:12.569 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:48:12.814 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:48:12.842 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:48:12.843 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:48:13.582 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:48:13.588 +03:30 [DBG] Created DbConnection. (4ms).
+2024-04-30 17:48:13.594 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.628 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.643 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:48:14.652 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (8ms).
+2024-04-30 17:48:14.656 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (16ms).
+2024-04-30 17:48:14.662 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:48:14.678 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:48:14.686 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.694 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (3ms).
+2024-04-30 17:48:14.700 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:48:14.702 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:48:14.702 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2024-04-30 17:48:14.703 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.704 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.705 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:48:14.717 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:48:14.719 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.720 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:48:14.730 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.731 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.732 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:48:14.733 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:48:14.734 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:48:14.735 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:48:14.739 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:48:14.741 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.743 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 2ms reading results.
+2024-04-30 17:48:14.744 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.745 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:48:14.747 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:48:14.749 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:48:14.751 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-30 17:50:16.918 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:50:17.368 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:50:17.380 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:50:17.625 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:50:17.656 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:50:17.657 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:50:18.495 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:50:18.500 +03:30 [DBG] Created DbConnection. (4ms).
+2024-04-30 17:50:18.508 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.534 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.544 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.551 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2024-04-30 17:50:19.555 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (12ms).
+2024-04-30 17:50:19.564 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.581 +03:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.588 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.592 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-04-30 17:50:19.598 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:50:19.602 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2024-04-30 17:50:19.604 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (5ms).
+2024-04-30 17:50:19.605 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.606 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.607 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.618 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.620 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.621 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:50:19.630 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.632 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.633 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:50:19.634 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:50:19.635 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:50:19.636 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:50:19.640 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:50:19.643 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.645 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 2ms reading results.
+2024-04-30 17:50:19.646 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.647 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.649 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.650 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.651 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.652 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.652 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.653 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.654 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.657 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.659 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.659 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.660 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:50:19.661 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-30 17:50:19.662 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:50:19.662 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.663 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.664 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.667 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.668 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.669 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.670 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.671 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.672 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.672 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.673 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.674 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.686 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:50:19.689 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.690 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.690 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:50:19.691 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-30 17:50:19.692 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:50:19.692 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.693 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.694 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.696 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:50:19.697 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.698 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:50:19.699 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.700 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.701 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:50:19.701 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:50:19.702 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:50:19.703 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:50:19.705 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:50:19.706 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.707 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2024-04-30 17:50:19.708 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.709 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.716 +03:30 [INF] Reverting migration '20240430141526_someupdate'.
+2024-04-30 17:50:19.752 +03:30 [DBG] Executing 2 update commands as a batch.
+2024-04-30 17:50:19.758 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.759 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.761 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-04-30 17:50:19.768 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-04-30 17:50:19.770 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.770 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.772 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.772 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '47058718-89d8-4d7c-8343-ddcdc38a93dd';
+SELECT @@ROWCOUNT;
+2024-04-30 17:50:19.778 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = '47058718-89d8-4d7c-8343-ddcdc38a93dd';
+SELECT @@ROWCOUNT;
+2024-04-30 17:50:19.779 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.780 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.781 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.782 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = 'c51afe73-9391-4c47-ac0a-c03dbf521ceb';
+SELECT @@ROWCOUNT;
+2024-04-30 17:50:19.786 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetRoles]
+WHERE [Id] = 'c51afe73-9391-4c47-ac0a-c03dbf521ceb';
+SELECT @@ROWCOUNT;
+2024-04-30 17:50:19.788 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.788 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.789 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.790 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('53253ccd-15c7-4c49-8021-a0f1633899c0', N'5050e615-22ca-404a-a319-24b672a7a333', N'User', N'USER'),
+('87ef14a9-2d76-43b4-9ca2-61f508d9b016', N'2ef91154-c51a-46aa-9eb7-84dd64cc6a74', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-04-30 17:50:19.799 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('53253ccd-15c7-4c49-8021-a0f1633899c0', N'5050e615-22ca-404a-a319-24b672a7a333', N'User', N'USER'),
+('87ef14a9-2d76-43b4-9ca2-61f508d9b016', N'2ef91154-c51a-46aa-9eb7-84dd64cc6a74', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-04-30 17:50:19.800 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:50:19.801 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-04-30 17:50:19.801 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-04-30 17:50:19.802 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240430141526_someupdate';
+2024-04-30 17:50:19.804 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240430141526_someupdate';
+2024-04-30 17:50:19.806 +03:30 [DBG] Committing transaction.
+2024-04-30 17:50:19.811 +03:30 [DBG] Committed transaction.
+2024-04-30 17:50:19.812 +03:30 [DBG] Disposing transaction.
+2024-04-30 17:50:19.813 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.813 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:50:19.872 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:50:19.875 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:50:19.876 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-04-30 17:50:46.484 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:50:47.026 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:50:47.029 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:50:47.334 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:50:47.368 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:50:47.370 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:50:48.763 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:51:07.733 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:51:08.152 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:08.154 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:08.393 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:51:08.421 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:08.423 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:09.141 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:51:26.387 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:51:26.815 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:26.820 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:27.049 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:51:27.080 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:27.081 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:27.978 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:51:57.972 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:51:58.345 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:58.348 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:58.558 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:51:58.585 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:51:58.587 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:51:59.319 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:51:59.324 +03:30 [DBG] Created DbConnection. (3ms).
+2024-04-30 17:51:59.332 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.347 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.358 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:52:00.367 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2024-04-30 17:52:00.370 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (15ms).
+2024-04-30 17:52:00.378 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:52:00.395 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:52:00.400 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.404 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:52:00.407 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:52:00.408 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:52:00.409 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:52:00.410 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.411 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.412 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:52:00.423 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:52:00.425 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.426 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:52:00.436 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.438 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.438 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:52:00.439 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:52:00.440 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:52:00.441 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:52:00.444 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:52:00.447 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.449 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 2ms reading results.
+2024-04-30 17:52:00.450 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.451 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:52:00.508 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:52:00.512 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:00.515 +03:30 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-04-30 17:52:11.254 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-30 17:52:11.659 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:52:11.661 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:52:11.905 +03:30 [DBG] Entity Framework Core 8.0.4 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+2024-04-30 17:52:11.933 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-04-30 17:52:11.934 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-04-30 17:52:12.774 +03:30 [DBG] Creating DbConnection.
+2024-04-30 17:52:12.779 +03:30 [DBG] Created DbConnection. (3ms).
+2024-04-30 17:52:12.786 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.810 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.816 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-04-30 17:52:13.822 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2024-04-30 17:52:13.828 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (13ms).
+2024-04-30 17:52:13.833 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:52:13.846 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-30 17:52:13.851 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.857 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (3ms).
+2024-04-30 17:52:13.861 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-04-30 17:52:13.862 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-04-30 17:52:13.862 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-04-30 17:52:13.863 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.865 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.866 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:52:13.879 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-30 17:52:13.881 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.883 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-04-30 17:52:13.892 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.894 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.895 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-30 17:52:13.896 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-04-30 17:52:13.897 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-04-30 17:52:13.899 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:52:13.902 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-30 17:52:13.906 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.908 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 3ms reading results.
+2024-04-30 17:52:13.909 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.910 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-04-30 17:52:13.972 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-04-30 17:52:13.974 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-04-30 17:52:13.977 +03:30 [DBG] Disposed connection to database '' on server '' (2ms).

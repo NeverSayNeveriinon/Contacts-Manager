@@ -1,0 +1,577 @@
+﻿@* this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views) *@
+@using Core.Enums
+@model Core.DTO.PersonDTO.PersonAddRequest
+
+@{
+    ViewBag.Title = "Create Person";
+    ViewBag.CurrentUrl = "~/Persons/Create";
+}
+
+<!-- breadcrumb starts -->
+<div class="flex">
+ <div class="flex-1">
+  <div class="text-grey">
+   <span>Contacts</span>
+   <i class="fa-solid fa-caret-right"></i>
+   <span class="text-grey">Persons</span>
+   <i class="fa-solid fa-caret-right"></i>
+   <span class="text-grey">Create</span>
+  </div>
+ </div>
+</div>
+<!-- breadcrumb ends -->
+
+
+
+<div class="form-container">
+
+    <a asp-controller="Persons" asp-action="Index" class="link-hover">Back to Persons List</a>
+    <h2 class="text-large">Create Person</h2>
+    
+    <form asp-controller="Persons" asp-action="Create" method="post">
+
+        @*'Person Name' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="Name" class="form-label pt">Persons Name</label>
+            </div>
+
+            <div class="flex-1">
+                <input asp-for="Name" class="form-input" placeholder="name..." />
+                <span asp-validation-for="Name" class="text-red"></span> @*for showing error message of property*@
+
+                @*Without tag helper: <input id="Name" name="Name" type="text" class="form-input" placeholder="name..." /> *@
+            </div>
+        </div>
+
+
+        @*'Email' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+
+            <div class="flex-1">
+                @*if we need we can add type="email" because its default may be sth else*@
+                <input asp-for="Email" class="form-input" placeholder="email..." />
+                <span asp-validation-for="Email" class="text-red"></span> @*for showing error message of property*@
+
+                @*Without tag helper: <input class="form-input" id="Email" name="Email" type="email" placeholder="email..." /> *@
+            </div>
+        </div>
+        
+
+        @*'DateOfBirth' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="DateOfBirth" class="form-label pt">DateOfBirth </label>
+            </div>
+
+            <div class="flex-1">
+                @* 1. if we need we can add type="date" because its default may be sth else which is here and default is datetime not date, so we add type="date"*@
+                @* or 2.instead of add 'type' here we can use DataAnnotations in model class in above of 'DateofBirth' property*@
+                <input asp-for="DateOfBirth" type="date" class="form-input" placeholder="date Of birth..." />
+                <span asp-validation-for="DateOfBirth" class="text-red"></span> @*for showing error message of property*@
+
+                @*Without tag helper: <input class="form-input" id="DateOfBirth" name="DateOfBirth" type="date" placeholder="date of birth..." /> *@
+            </div>
+        </div>
+        
+
+        @*'Gender' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label class="form-label pt">Gender</label>
+            </div>
+
+            <div class="flex-1">
+                @{
+                    List<string> genderNames = Enum.GetNames(typeof(GenderOptions)).ToList();
+                }
+
+                @foreach (var genderName in genderNames)
+                {
+                    <label asp-for=@genderName>@genderName</label>
+                    <input asp-for="Gender" id=@genderName type="radio" value=@genderName /> @*We add 'id' because every 3 input would have one 'id' if we don't*@
+                }
+
+                <span asp-validation-for="Gender" class="text-red"></span> @*for showing error message of property*@
+
+
+                @* Without tag helper 'asp-for': *@
+                @* <label for="Male">Male</label>
+                <input id="Male" name="Gender" type="radio" value="Male"/>
+
+                <label for="Female">Female</label>
+                <input id="Female" name="Gender" type="radio" value="Female"/>
+
+                <label for="Other">Other</label>
+                <input id="Other" name="Gender" type="radio" value="Other"/> *@
+            </div>
+        </div>
+
+
+        @*'Address' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="Address" class="form-label pt">Address</label>
+            </div>
+
+            <div class="flex-1">
+                <textarea asp-for="Address" class="form-input" placeholder="address..."></textarea>
+                <span asp-validation-for="Address" class="text-red"></span> @*for showing error message of property*@
+
+                @*Without tag helper: <textarea class="form-input" id="Address" name="Address" placeholder="addresss..."></textarea> *@
+            </div>
+        </div>
+        
+
+        @*'RecieveNewsLetters' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+            </div>
+
+            <div class="flex-1">
+                <label asp-for="RecieveNewsLetters">RecieveNewsLetters</label>
+                <input asp-for="RecieveNewsLetters"/>
+                <span asp-validation-for="RecieveNewsLetters" class="text-red"></span> @*for showing error message of property*@
+
+                @*Without tag helper: <input id="RecieveNewsLetters" name="RecieveNewsLetters" type="checkbox" value="true" /> *@
+            </div>
+        </div>
+        
+
+        @*'Country' field*@
+        <div class="form-field flex">
+            <div class="w-20">
+                <label asp-for="CountryID" class="form-label pt">Country</label>
+            </div>
+
+            <div class="flex-1">
+                <select asp-for="CountryID" asp-items=@ViewBag.AllCountries2 class="form-input">
+                    <option value="" disabled selected="selected">Please Select</option>
+                </select>
+                <span asp-validation-for="CountryID" class="text-red"></span> @*for showing error message of property*@
+
+
+                @* Without tag helper 'asp-items': *@
+                @* <select asp-for="CountryID" class="form-input">
+                    <option value="">Please Select</option>
+                    @foreach (CountryResponse country in ViewBag.AllCountries1)
+                    {
+                        <option value=@country.ID>@country.Name</option>
+                    }
+                </select> *@
+            </div>
+        </div>
+
+
+        @*'Submit' Button*@
+        <div class="form-field flex">
+            <div class="w-20">
+            </div>
+            <div class="flex-1">
+                <button class="button button-green-back">Create</button>
+
+                @*All Errors*@
+                @* Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other *@
+                <div asp-validation-summary="All" class="text-red"></div>
+
+
+                @*All Errors*@
+                @* Way2: the errors list from controller*@
+                @* @if (ViewBag.ErrorsList != null)
+                {
+                    <ul class="text-red ml">
+                        @foreach (var error in ViewBag.ErrorsList)
+                        {
+                            <li class="ml">@error</li>
+                        }
+                    </ul>
+                } *@
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@* **Important**: better to add the script tags in the end of 'Body' tag of our html code because the page will load them late and page will have less overhead to be loaded at start time
+    ,but since we are using a 'layout' view, here everything in 'Create.cshtml' will take place inside 'RenderBody()' in layout, so we have to do two things:
+    1. First, make the 'script' tags inside a section
+    2. Second, render the section in our Layout view and put that after the 'body' tag in layout view
+*@
+
+@section scripts
+{
+    @*jQuery Libraries for 'client side validation'*@
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+            asp-fallback-src="~/jquery.min.js" asp-fallback-test="window.jQuery"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+            asp-fallback-src="~/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"
+            asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script>
+}
+
+
+
+@*##Tips##*@
+@*1) To use 'Tag Helper' named 'asp-for' the View must be bounded to a model means it has to be 'Strongly Typed' view. (but for example for 'asp-controller' we don't need that) *@
+
+@*2) A benefit that "Tag Helpers" like 'asp-for' have, due to the fact that the view must be 'strongly typed' we will get error if we mention a property name that 
+    doesn't exist and also the intellisense will help us to select the proper property *@
+
+@*3) The attributes that 'Tag Helpers' generate can be overridden manually, means if we write " asp-for="Email" type="email" ", then the 'email' will override the 'type=text'
+     that the 'tag helper' is generated. In general for override for exp the 'type' attribute there are two options:
+        1. Write ^ type="..." ^ attribute manually in html tag so the type will be overridden as we said earlier
+        2. Write ^ [DataType(DataType.EmailAddress)] ^ in Model class (here 'PersonAddRequest') above of property(here like 'Email')
+     However in this view we didn't do any of these options and still if you inspect the page in browser, you'll see 'type=email', probably due to property name that is "Email" *@
+
+@*4) If we using Tag Helper for 'form' related tags like 'input', when making a post req, in 'create' post action, 
+     if there will be an error, it returns same view, in that time this "Tag Helper" fills the 'value' attribute of 'input' tag with previous value that user enters
+     in related filed with some mechanism that framework itself has, the point is we are no longer should concern about the value, like defining exp: 'CurrentSearchString'
+     (but consider that we have to bound the view with corresponding model) *@
+
+@*5) When using two Tag helpers named "asp-controller" & "asp-action" in 'a','form',... tags, it would go to action routes and decide which 'url' to choose,
+     means it doesn't always generate "controller/action"
+      The are some priorities:
+       1. The first priority goes for the 'url' that matches this pattern, "controller/action" for exp: "persons/index", no matter it is HttpGet, HttpPost or Route attribute
+        1.1 and if there are two matched 'urls', then the one with shortest length would be selected but in case there is '/' after pattern then the longest length would be selected
+            Exp1: ^[Route("/persons/index")]^ & ^[HttpGet("/persons/indexst")]^ --> the first will be selected (no matter 'Route' or 'HttpGet' attributes)
+            Exp2: ^[Route("/persons/index")]^ & ^[HttpGet("/persons/index/st")]^ --> the second will be selected (no matter 'Route' or 'HttpGet' attributes)
+       2. If number '1' doesn't exist, the 'urls' with "Route" attribute would be selected first and between them the shortest length
+            Exp1: ^[Route("/something1")]^ & ^[Route("/something")]^ & ^[HttpGet("/some")]^ --> the second will be selected (because it is 'Route' and has shorter length)
+       3. If number '2' doesn't exist, the 'urls' with "Http" attributes like "HttpGet" and "HttpPost" would be selected and between them the the shortest length
+            Exp1: ^[HttpGet("/something11")]^ & ^[HttpGet("/something1")]^ & ^[HttpPost("/something")]^ --> the third will be selected (because has shortest length)
+            Exp2: ^[HttpPost("/something11")]^ & ^[HttpGet("/something1")]^ & ^[HttpGet("/something")]^ --> the third will be selected (because has shortest length)
+
+     **Result**: so the benefit is maybe we have an 'url' with different name than 'controller/action' and maybe wanna change the 'url' in future then if don't use
+     the tag helpers 'asp-controller' & 'asp-action' then we have to change the urls in many places we have used it, so it is better to not hard coded the 'url' *@
+
+@*6) 'The Client-Side Validation' using 3 jQuery libraries:
+     -  *??WHY??*: When we don't have client-side validation, the request will be normally sent to server and if there are errors 'proper messages' will be sent to client as a response,
+         so here the client sees the errors very late because he/she must wait for the response from server, the 'client-side validation' here helps us.
+     -  *??HOW??*: 
+            1. We have already done the validation with 'DataAnnotations' or 'FluentValidation' or anything else
+            2. We need 'data-*' attributes (like 'data-val', 'data-val-required') in our tags (like 'input', 'select', ...), there are two options:
+                2.1 We can define them manually ourselves and that is hard, for example we need to repeat the error message and write that again ourseleves
+                2.2 (Suggested) We can use tag helpers like 'asp-for' that will automatically do them for us
+            3. We need to import and 'just import' 3 jQuery libraries from 'CDN' in a specific order as 'src' attribute in 3 'script' tags: 
+                3.1. "jquery.min.js": The regular 'jQuery' file that provides shortcut functions to perform DOM manipulations in browser
+                3.2. "jquery.validate.min.js" This file provides validation capabilities for existing jQuery functions,it means it's able to check the values of text boxes
+                      when the user clicks on the submit button and also when user types sth in textbox, and based on these it can show or hide the error messages
+                3.3. "jquery.validate.unobtrusive.min.js" The 'jquery.validate' can't read the values of 'data-*' attributes by default, so to do that this library
+                      will connect the 'jquery.validate' to 'data-*' attributes in html tags, means it reads the values of 'data-*' attributes and then send them
+                      to 'jquery.validate' library
+            *Here the order is important because 3 is based on 2 and 2 is based on 1, if you break the order it won't work.*
+             So after doing these, while the browser loads the html code when it arrives at our 'script' tags, it sends a requests to the mentioned 'url'
+     -  *??SO IF IT SENDS ANOTHER REQUEST TO ANOTHER SERVER, WHY DOESN'T IT SEND TO OUR SERVER??*
+             1. Because we can use the benefits of cross-site caching when using 'CDN' links
+             2. *It is best practice to look in 'inspect' in browser and see the requests and responses, for exp:
+               2.1. When we use the 'The Client-Side Validation', there will be no 'post' request to our server if there is an error (in 'Create' page), it means the validations
+                    are done in client and we won't make a post request with every single click on submit button and wait for the response and see if there is an error or not*
+                    *IMPORTANT*: POST Requests (for example in Create page) will be sent to server with every single click on submit button and how that POST req with data
+                    in fields can be cached, so it can't, but GET reqs to CDN links will be easily cached, and another thing is maybe req to CDN servers are more optimized than req to
+                    our server. ----> you can see (200 OK (from memory cache)) in browser, just do and see it (for all requests check it out) *@
+
+@*7)  *??HOW TO SHOW ERROR MESSAGES??*
+      We can show the errors one by one after specific 'input' field or we can show all of them in one place, also both of them, So 2 Ways:
+          1. Showing one by one: We have to use 'span' html tag with attribute 'asp-validation-for' (for exp after every input field), the value of this attribute
+             would be our 'property' name (such as 'PersonName' here), so in this way this 'span' tag can read the error message of that property and will write that inside the tag
+             when needed in browser. (you can use inspect in browser and see what this " 'span' tag with attribute 'asp-validation-for' " would become in html, you can see two nested
+             span tag there)
+          2. Showing all of them: We have to use 'div' html tag with attribute 'asp-validation-summary' (anywhere but for exp in bottom of the page), the value of this attribute
+             would be 'all' (it also has none,...) so in this way this 'div' tag can read all the error messages of input fields and will write that inside the tag
+             when needed in browser  (you can use inspect in browser and see what this " 'div' tag with attribute 'asp-validation-summary' " would become in html, you can see
+             some 'li' tags in a 'ul' tag and all of them in a 'div' tag there)
+       **Important**: Doesn't matter we have the 'client-side' or 'server-side' validation, both of preceding ways will work for both validations, because these tags are just
+       related to properties and their error rules and messages and not the way of validation *@
+
+@*7) *??WHAT IF A CDN LINK DOESN'T LOAD AT CLIENT BROWSER FOR ANY REASON??* 
+       The solution is that we can use 'fallback urls', means we can download the specific CDN link in our server to use that file when client can't connect to CDN servers,
+       so when this happens the browser send a request to get the same file but this time from our server.
+       ?HOW?:
+         There are different types of usage of these tags, we can use it in 'script tags' or 'css link tags':
+         1. 'script' tag: We just need 2 attributes:
+               1.1: 'asp-fallback-src' -> the value is local url of specified 'js file' in server 
+               1.2: 'asp-fallback-test' -> the value is a specific name of an object in browser related to the specific file (for example for jQuery.js it is 'window.jQuery')
+             U should know that these attributes will be converted to a 'script' tag with js code inside it like (<script>object || document.write(....)<script>)
+            How does it work?:
+               1. "first the browser sends a request to CDN link mentioned in 'src' attribute of 'script' tag"
+                  then if it doesn't exist or for any reason the connection failed, the value of its object will be undefined or whatever 
+                  (for exp for the jQuery the 'window.jQuery will be undefined)
+               2. if we want to know the CDN link is loaded correctly or not, we have to read its object, so we fill the value of 'asp-fallback-test' attribute with proper object name,
+                  in this way after step 1 "browser check the value of that object and finds out the file is loaded correctly or not"
+               3. after the test of object and finding out the file is not loaded correctly, then "browser sends a request to mentioned url in 'asp-fallback-src' attribute" to get the
+                  js file from our server instead of CDN server
+         2. 'link' tag with 'rel=stylesheet' (CSS link): We just need 4 attributes:
+               1.1: 'asp-fallback-href' -> the value is local url of specified 'css file' in server
+               1.2: 'asp-fallback-test-class' -> the value is a class name of above css file
+               1.3: 'asp-fallback-test-property' -> the value is a property name of above class
+               1.4: 'asp-fallback-test-value' -> the value is a value of above property
+            How does it work?:
+               1. "first the browser sends a request to CDN link mentioned in 'href' attribute of 'link' tag"
+                  then if it doesn't exist or for any reason the connection failed, the css file doesn't exist, so we go to next step
+               2. if we want to know the CDN link is loaded correctly or not, we have to test it and "it is done by finding out that a specific 'value' of a specific 'property' of
+                  a specific 'class' is existing or not", so here is why we mention all of them and they are just example, we can write any "class,property,value" just for testing
+                  it exists or not and if not, we go to next step
+               3. if the test was resulted in negative, then "browser sends a request to mentioned url in 'asp-fallback-href' attribute" to get the
+                  css file from our server instead of CDN server
+            You can see the real usage in '_Layout.cshtml' *@
+
+@*8) An attribute named 'asp-append-version': this attribute will help us in 'img' tag to generate a hash based on the existing image and append that to url
+     query string like this: " localhost:18358/Logo.png " --> " localhost:18358/Logo.png?v=5y_yTpvZrY0F4qOteT5HaC-TEdGCUZXo4nmR_Flk4fk "
+     Why?:
+       Because the browser will cache the images, so if we chang the image in our server with the exact same name, then the browser will not figure out that the imaage is 
+       replaced and will use the cache version and won't send a req to get the image from server, so here we append hash of image in url, and if sometime the image changes,
+       the hash and url based on that will change so the browser must send another req to server because the url has been changed. 
+       The browser still cache the images, don't get me wrong, the difference is that from now on it will cache the 'image url that is based on hash' and
+       not 'image url based on just name' *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*--------------------OLD VIEW---------------------*@
+
+
+
+
+
+@* $1$this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views)#1# *@
+@* @model PersonAddRequest *@
+@* *@
+@* @{ *@
+@*     ViewBag.Title = "Create Person"; *@
+@* } *@
+@* *@
+@* <h2>Create Person</h2> *@
+@* *@
+@* <div class="center-box"> *@
+@*     $1$if using tag helpers: ^asp-controller="persons" asp-action="create"^  equal to -->  ^action="~/persons/create"^#1# *@
+@*     <form action="~/persons/create" method="post"> *@
+@* *@
+@*         $1$'Person Name' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label asp-for="Name" class="form-label pt">Persons Name</label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 <input asp-for="Name" class="form-input" placeholder="name..." /> *@
+@*                 <span asp-validation-for="Name" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@*                 $1$Without tag helper: <input id="Name" name="Name" type="text" class="form-input" placeholder="name..." /> #1# *@
+@*             </div> *@
+@*         </div> *@
+@* *@
+@* *@
+@*         $1$'Email' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label asp-for="Email" class="form-label pt">Email</label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 $1$if we need we can add type="email" because its default may be sth else#1# *@
+@*                 <input asp-for="Email" class="form-input" placeholder="email..." /> *@
+@*                 <span asp-validation-for="Email" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@*                 $1$Without tag helper: <input class="form-input" id="Email" name="Email" type="email" placeholder="email..." /> #1# *@
+@*             </div> *@
+@*         </div> *@
+@*          *@
+@* *@
+@*         $1$'DateOfBirth' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label asp-for="DateOfBirth" class="form-label pt">DateOfBirth </label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 $1$ 1. if we need we can add type="date" because its default may be sth else which is here and default is datetime not date, so we add type="date"#1# *@
+@*                 $1$ or 2.instead of add 'type' here we can use DataAnnotations in model class in above of 'DateofBirth' property#1# *@
+@*                 <input asp-for="DateOfBirth" type="date" class="form-input" placeholder="date Of birth..." /> *@
+@*                 <span asp-validation-for="DateOfBirth" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@*                 $1$Without tag helper: <input class="form-input" id="DateOfBirth" name="DateOfBirth" type="date" placeholder="date of birth..." /> #1# *@
+@*             </div> *@
+@*         </div> *@
+@*          *@
+@* *@
+@*         $1$'Gender' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label class="form-label pt">Gender</label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 @{ *@
+@*                     List<string> genderNames = Enum.GetNames(typeof(GenderOptions)).ToList(); *@
+@*                 } *@
+@* *@
+@*                 @foreach (var genderName in genderNames) *@
+@*                 { *@
+@*                     <label asp-for=@genderName>@genderName</label> *@
+@*                     <input asp-for="Gender" id=@genderName type="radio" value=@genderName /> $1$We add 'id' because every 3 input would have one 'id' if we don't#1# *@
+@*                 } *@
+@* *@
+@*                 <span asp-validation-for="Gender" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@* *@
+@*                 $1$ Without tag helper 'asp-for': #1# *@
+@*                 @* <label for="Male">Male</label> *@
+@*                 <input id="Male" name="Gender" type="radio" value="Male"/> *@
+@* *@
+@*                 <label for="Female">Female</label> *@
+@*                 <input id="Female" name="Gender" type="radio" value="Female"/> *@
+@* *@
+@*                 <label for="Other">Other</label> *@
+@*                 <input id="Other" name="Gender" type="radio" value="Other"/> 
+@*             </div> *@
+@*         </div> *@
+@* *@
+@* *@
+@*         $1$'Address' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label asp-for="Address" class="form-label pt">Address</label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 <textarea asp-for="Address" class="form-input" placeholder="address..."></textarea> *@
+@*                 <span asp-validation-for="Address" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@*                 $1$Without tag helper: <textarea class="form-input" id="Address" name="Address" placeholder="addresss..."></textarea> #1# *@
+@*             </div> *@
+@*         </div> *@
+@*          *@
+@* *@
+@*         $1$'RecieveNewsLetters' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 <label asp-for="RecieveNewsLetters">RecieveNewsLetters</label> *@
+@*                 <input asp-for="RecieveNewsLetters"/> *@
+@*                 <span asp-validation-for="RecieveNewsLetters" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@*                 $1$Without tag helper: <input id="RecieveNewsLetters" name="RecieveNewsLetters" type="checkbox" value="true" /> #1# *@
+@*             </div> *@
+@*         </div> *@
+@*          *@
+@* *@
+@*         $1$'Country' field#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*                 <label asp-for="CountryID" class="form-label pt">Country</label> *@
+@*             </div> *@
+@* *@
+@*             <div class="flex-1"> *@
+@*                 <select asp-for="CountryID" asp-items=@ViewBag.AllCountries2 class="form-input"> *@
+@*                     <option value="" disabled selected="selected">Please Select</option> *@
+@*                 </select> *@
+@*                 <span asp-validation-for="CountryID" class="text-red"></span> $1$for showing error message of property#1# *@
+@* *@
+@* *@
+@*                 $1$ Without tag helper 'asp-items': #1# *@
+@*                 @* <select asp-for="CountryID" class="form-input"> *@
+@*                     <option value="">Please Select</option> *@
+@*                     @foreach (CountryResponse country in ViewBag.AllCountries1) *@
+@*                     { *@
+@*                         <option value=@country.ID>@country.Name</option> *@
+@*                     } *@
+@*                 </select> 
+@*             </div> *@
+@*         </div> *@
+@* *@
+@* *@
+@*         $1$'Submit' Button#1# *@
+@*         <div class="form-field flex"> *@
+@*             <div class="w-20"> *@
+@*             </div> *@
+@*             <div class="flex-1"> *@
+@*                 <button class="button button-green-back">Create</button> *@
+@* *@
+@*                 $1$All Errors#1# *@
+@*                 $1$ Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other #1# *@
+@*                 <div asp-validation-summary="All" class="text-red"></div> *@
+@* *@
+@* *@
+@*                 $1$All Errors#1# *@
+@*                 $1$ Way2: the errors list from controller#1# *@
+@*                 @* @if (ViewBag.ErrorsList != null) *@
+@*                 { *@
+@*                     <ul class="text-red ml"> *@
+@*                         @foreach (var error in ViewBag.ErrorsList) *@
+@*                         { *@
+@*                             <li class="ml">@error</li> *@
+@*                         } *@
+@*                     </ul> *@
+@*                 } 
+@*             </div> *@
+@*         </div> *@
+@*     </form> *@
+@* </div> *@
+@* *@
+@* *@
+@* @* **Important**: better to add the script tags in the end of 'Body' tag of our html code because the page will load them late and page will have less overhead to be loaded at start time *@
+@*     ,but since we are using a 'layout' view, here everything in 'Create.cshtml' will take place inside 'RenderBody()' in layout, so we have to do two things: *@
+@*     1. First, make the 'script' tags inside a section *@
+@*     2. Second, render the section in our Layout view and put that after the 'body' tag in layout view *@
+@* 
+@* *@
+@* @section scripts *@
+@* { *@
+@*     $1$jQuery Libraries for 'client side validation'#1# *@
+@*    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"  *@
+@*             asp-fallback-src="~/jquery.min.js" asp-fallback-test="window.jQuery"></script> *@
+@* *@
+@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" *@
+@*             asp-fallback-src="~/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator"></script> *@
+@* *@
+@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" *@
+@*             asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script> *@
+@* } *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
