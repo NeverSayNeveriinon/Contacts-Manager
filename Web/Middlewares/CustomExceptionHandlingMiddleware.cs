@@ -1,58 +1,47 @@
-﻿using Serilog;
+﻿namespace Web.Middlewares;
 
-namespace Web.Middlewares
+public class CustomExceptionHandlingMiddleware
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
-    public class CustomExceptionHandlingMiddleware
-    {
-        private readonly RequestDelegate _next;
+    private readonly RequestDelegate _next;
         
-        private readonly ILogger<CustomExceptionHandlingMiddleware> _logger;
-        private readonly IDiagnosticContext _diagnosticContext;
+    private readonly ILogger<CustomExceptionHandlingMiddleware> _logger;
 
-
-        public CustomExceptionHandlingMiddleware(RequestDelegate next, ILogger<CustomExceptionHandlingMiddleware> logger, IDiagnosticContext diagnosticContext)
-        {
-            _next = next;
+    public CustomExceptionHandlingMiddleware(RequestDelegate next, ILogger<CustomExceptionHandlingMiddleware> logger)
+    {
+        _next = next;
             
-            _logger = logger;
-            _diagnosticContext = diagnosticContext;
-        }
-
-        public async Task Invoke(HttpContext httpContext)
-        {
-            try
-            {
-                await _next(httpContext);
-            }
-            catch (Exception ex)
-            {
-                if (ex.InnerException is not null)
-                {
-                    _logger.LogError("~~~ {ExceptionType} : {ExceptionMessage}",ex.InnerException.GetType().ToString(),
-                                                                          ex.InnerException.Message);
-                }
-                else
-                {
-                    _logger.LogError("~~~ {ExceptionType} : {ExceptionMessage}",ex.GetType().ToString(), ex.Message);
-                }
-
-                 // In Case of not using built-in 'UseExceptionHandler' 
-                // httpContext.Response.StatusCode = 500;   
-                // await httpContext.Response.WriteAsync("An Error is Occurred");   
-                
-                 // In Case of using built-in 'UseExceptionHandler' 
-                throw;
-            }
-        }
+        _logger = logger;
     }
 
-    // Extension method used to add the middleware to the HTTP request pipeline.
-    public static class CustomExceptionHandlingMiddlewareExtensions
+    public async Task Invoke(HttpContext httpContext)
     {
-        public static IApplicationBuilder UseCustomExceptionHandlingMiddleware(this IApplicationBuilder builder)
+        try
         {
-            return builder.UseMiddleware<CustomExceptionHandlingMiddleware>();
+            await _next(httpContext);
         }
+        catch (Exception ex)
+        {
+            if (ex.InnerException is not null)
+            {
+                _logger.LogError("~~~ {ExceptionType} : {ExceptionMessage}",ex.InnerException.GetType().ToString(),
+                    ex.InnerException.Message);
+            }
+            else
+            {
+                _logger.LogError("~~~ {ExceptionType} : {ExceptionMessage}",ex.GetType().ToString(), ex.Message);
+            }
+
+            // In Case of using built-in 'UseExceptionHandler' 
+            throw;
+        }
+    }
+}
+
+// Extension method used to add the middleware to the HTTP request pipeline.
+public static class CustomExceptionHandlingMiddlewareExtensions
+{
+    public static IApplicationBuilder UseCustomExceptionHandlingMiddleware(this IApplicationBuilder builder)
+    {
+        return builder.UseMiddleware<CustomExceptionHandlingMiddleware>();
     }
 }

@@ -213,7 +213,7 @@ namespace Entities.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<bool>("RecieveNewsLetters")
+                    b.Property<bool>("ReceiveNewsLetters")
                         .HasColumnType("bit");
 
                     b.Property<string>("TIN")
@@ -242,7 +242,7 @@ namespace Entities.Migrations
                             Email = "mwebsdale0@people.com.cn",
                             Gender = "Female",
                             Name = "Marguerite",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -253,7 +253,7 @@ namespace Entities.Migrations
                             Email = "ushears1@globo.com",
                             Gender = "Female",
                             Name = "Ursa",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -264,7 +264,7 @@ namespace Entities.Migrations
                             Email = "fbowsher2@howstuffworks.com",
                             Gender = "Male",
                             Name = "Franchot",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -275,7 +275,7 @@ namespace Entities.Migrations
                             Email = "asarvar3@dropbox.com",
                             Gender = "Male",
                             Name = "Angie",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -286,7 +286,7 @@ namespace Entities.Migrations
                             Email = "ttregona4@stumbleupon.com",
                             Gender = "Female",
                             Name = "Tani",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -297,7 +297,7 @@ namespace Entities.Migrations
                             Email = "mlingfoot5@netvibes.com",
                             Gender = "Male",
                             Name = "Mitchael",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -308,7 +308,7 @@ namespace Entities.Migrations
                             Email = "mjarrell6@wisc.edu",
                             Gender = "Male",
                             Name = "Maddy",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -319,7 +319,7 @@ namespace Entities.Migrations
                             Email = "pretchford7@virginia.edu",
                             Gender = "Female",
                             Name = "Pegeen",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -330,7 +330,7 @@ namespace Entities.Migrations
                             Email = "hmosco8@tripod.com",
                             Gender = "Male",
                             Name = "Hansiain",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -341,7 +341,7 @@ namespace Entities.Migrations
                             Email = "lwoodwing9@wix.com",
                             Gender = "Male",
                             Name = "Lombard",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -352,7 +352,7 @@ namespace Entities.Migrations
                             Email = "mconachya@va.gov",
                             Gender = "Female",
                             Name = "Minta",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         },
                         new
                         {
@@ -363,7 +363,7 @@ namespace Entities.Migrations
                             Email = "vklussb@nationalgeographic.com",
                             Gender = "Female",
                             Name = "Verene",
-                            RecieveNewsLetters = false
+                            ReceiveNewsLetters = false
                         });
                 });
 

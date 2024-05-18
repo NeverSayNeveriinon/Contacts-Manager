@@ -679,3 +679,4 @@ C:\Visual Studio\Personal Projects\Contacts Manager\XUnitTests\obj\Debug\net8.0\
 C:\Visual Studio\Personal Projects\Contacts Manager\XUnitTests\obj\Debug\net8.0\XUnitTests.pdb
 C:\Visual Studio\Personal Projects\Contacts Manager\XUnitTests\obj\Debug\net8.0\XUnitTests.genruntimeconfig.cache
 C:\Visual Studio\Personal Projects\Contacts Manager\XUnitTests\obj\Debug\net8.0\ref\XUnitTests.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\XUnitTests\obj\Debug\net8.0\XUnitTests.sourcelink.json

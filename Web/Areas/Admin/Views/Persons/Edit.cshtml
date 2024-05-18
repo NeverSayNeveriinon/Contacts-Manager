@@ -1,6 +1,7 @@
-﻿@*this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views)*@
-@using Core.Enums
-@model Core.DTO.PersonDTO.PersonResponse
+﻿@using Core.Enums
+@using Core.DTO.PersonDTO
+
+@model PersonResponse
 
 @{
     ViewBag.Title = "Edit Person";
@@ -109,15 +110,15 @@
         </div>
         
 
-        @*'RecieveNewsLetters' field*@
+        @*'ReceiveNewsLetters' field*@
         <div class="form-field flex">
             <div class="w-20">
             </div>
 
             <div class="flex-1">
-                <label asp-for="RecieveNewsLetters">RecieveNewsLetters</label>
-                <input asp-for="RecieveNewsLetters"/>
-                <span asp-validation-for="RecieveNewsLetters" class="text-red"></span> @*for showing error message of property*@
+                <label asp-for="ReceiveNewsLetters">ReceiveNewsLetters</label>
+                <input asp-for="ReceiveNewsLetters"/>
+                <span asp-validation-for="ReceiveNewsLetters" class="text-red"></span> @*for showing error message of property*@
             </div>
         </div>
         
@@ -145,21 +146,8 @@
                 <button class="button button-green-back">Edit</button>
 
                 @*All Errors*@
-                @* Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other *@
                 <div asp-validation-summary="All" class="text-red"></div>
 
-
-                @*All Errors*@
-                @* Way2: the errors list from controller*@
-                @* @if (ViewBag.ErrorsList != null)
-                {
-                    <ul class="text-red ml">
-                        @foreach (var error in ViewBag.ErrorsList)
-                        {
-                            <li class="ml">@error</li>
-                        }
-                    </ul>
-                } *@
             </div>
         </div>
     </form>
@@ -178,199 +166,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"
             asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script>
 }
-
-
-
-@*##Tips##*@
-@*1) You can see an 'input' tag with attribure 'type' equal to 'hidden' in top of the file inside 'form' tag.
-     We use these 'hidden tags' (maybe 'input' maybe some other tags like 'input') when " we want that 'input' tag to be invisible to user and the user
-     not be able to modify and see that, but on the other hand we need the value of that (for exp for a property like 'id') to use in view or send that to server " *@
-@*2) *@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@*--------------------OLD VIEW---------------------*@
-
-
-
-@* *@
-@* $1$this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views)#1# *@
-@* @model PersonResponse *@
-@* *@
-@* @{ *@
-@*     ViewBag.Title = "Edit Person"; *@
-@* } *@
-@* *@
-@* <h2>Edit Person</h2> *@
-@* *@
-@* <div class="center-box"> *@
-@*     $1$if using tag helpers: ^asp-controller="persons" asp-action="edit"^  equal to -->  ^action="~/persons/edit"^#1# *@
-@*     <form action="~/persons/edit" method="post"> *@
-@* *@
-@* *@
-@*         $1$Hidden 'ID' field#1# *@
-@*         <input type="hidden" asp-for="ID" /> *@
-@* *@
-@* *@
-@*         $1$'Person Name' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label asp-for="Name" class="form-label pt">Persons Name</label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <input asp-for="Name" class="form-input" placeholder="name..." /> *@
-@*                 <span asp-validation-for="Name" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@* *@
-@* *@
-@*         $1$'Email' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label asp-for="Email" class="form-label pt">Email</label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <input asp-for="Email" class="form-input" placeholder="email..." /> *@
-@*                 <span asp-validation-for="Email" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@*          *@
-@* *@
-@*         $1$'DateOfBirth' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label asp-for="DateOfBirth" class="form-label pt">DateOfBirth </label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <input asp-for="DateOfBirth" type="date" class="form-input" placeholder="date Of birth..." /> *@
-@*                 <span asp-validation-for="DateOfBirth" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@*          *@
-@* *@
-@*         $1$'Gender' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label class="form-label pt">Gender</label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 @{ *@
-@*                     List<string> genderNames = Enum.GetNames(typeof(GenderOptions)).ToList(); *@
-@*                 } *@
-@* *@
-@*                 @foreach (var genderName in genderNames) *@
-@*                 { *@
-@*                     <label asp-for=@genderName>@genderName</label> *@
-@*                     <input asp-for="Gender" id=@genderName type="radio" value=@genderName /> *@
-@*                 } *@
-@* *@
-@*                 <span asp-validation-for="Gender" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@* *@
-@* *@
-@*         $1$'Address' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label asp-for="Address" class="form-label pt">Address</label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <textarea asp-for="Address" class="form-input" placeholder="address..."></textarea> *@
-@*                 <span asp-validation-for="Address" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@*          *@
-@* *@
-@*         $1$'RecieveNewsLetters' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <label asp-for="RecieveNewsLetters">RecieveNewsLetters</label> *@
-@*                 <input asp-for="RecieveNewsLetters"/> *@
-@*                 <span asp-validation-for="RecieveNewsLetters" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@*          *@
-@* *@
-@*         $1$'Country' field#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*                 <label asp-for="CountryID" class="form-label pt">Country</label> *@
-@*             </div> *@
-@* *@
-@*             <div class="flex-1"> *@
-@*                 <select asp-for="CountryID" asp-items=@ViewBag.AllCountries class="form-input"> *@
-@*                     <option value="" disabled selected="selected">Please Select</option> *@
-@*                 </select> *@
-@*                 <span asp-validation-for="CountryID" class="text-red"></span> $1$for showing error message of property#1# *@
-@*             </div> *@
-@*         </div> *@
-@* *@
-@* *@
-@*         $1$'Submit' Button#1# *@
-@*         <div class="form-field flex"> *@
-@*             <div class="w-20"> *@
-@*             </div> *@
-@*             <div class="flex-1"> *@
-@*                 <button class="button button-green-back">Edit</button> *@
-@* *@
-@*                 $1$All Errors#1# *@
-@*                 $1$ Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other #1# *@
-@*                 <div asp-validation-summary="All" class="text-red"></div> *@
-@* *@
-@* *@
-@*                 $1$All Errors#1# *@
-@*                 $1$ Way2: the errors list from controller#1# *@
-@*                 @* @if (ViewBag.ErrorsList != null) *@
-@*                 { *@
-@*                     <ul class="text-red ml"> *@
-@*                         @foreach (var error in ViewBag.ErrorsList) *@
-@*                         { *@
-@*                             <li class="ml">@error</li> *@
-@*                         } *@
-@*                     </ul> *@
-@*                 } 
-@*             </div> *@
-@*         </div> *@
-@*     </form> *@
-@* </div> *@
-@* *@
-@* *@
-@* @section scripts *@
-@* { *@
-@*     $1$jQuery Libraries for 'client side validation'#1# *@
-@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"  *@
-@*             asp-fallback-src="~/jquery.min.js" asp-fallback-test="window.jQuery"></script> *@
-@* *@
-@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" *@
-@*             asp-fallback-src="~/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator"></script> *@
-@* *@
-@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" *@
-@*             asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script> *@
-@* } *@

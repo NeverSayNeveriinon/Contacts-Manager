@@ -1,10 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 using Core.DTO.CountryDTO;
 using Core.DTO.PersonDTO;
 using Core.Enums;
 using Core.ServiceContracts;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 
 namespace Web.Areas.Admin.Controllers;
@@ -19,7 +20,7 @@ public class PersonsController : Controller
     private readonly ILogger<PersonsController>? _logger;
         
     public PersonsController (IPersonsService personsService, ICountriesService countriesService,
-        ILogger<PersonsController>? logger)
+                              ILogger<PersonsController>? logger)
     {
         _personsService = personsService;
         _countriesService = countriesService;
@@ -31,32 +32,27 @@ public class PersonsController : Controller
     // 'Persons' page //
     [Route("/persons/index")]
     public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.Name), 
-        SortOrderOptions sortOrder = SortOrderOptions.ASC)
+                                            SortOrderOptions sortOrder = SortOrderOptions.ASC)
     {
-        _logger?.LogInformation("~~~ Started 'Index' action method of 'Persons' controller ");
-        _logger?.LogDebug($"~~~ searchBy: {searchBy}, searchString: {searchString}, sortBy: {sortBy}, sortOrder: {sortOrder}");
+        _logger?.LogInformation("~~~ Started 'Index' action method of 'Persons' controller ~~~");
+        _logger?.LogDebug($"~~~ searchBy: {searchBy}, searchString: {searchString}, sortBy: {sortBy}, sortOrder: {sortOrder} ~~~");
             
-        // List<PersonResponse> allPersons = _personsService.GetAllPersons();
+        
         List<PersonResponse> matchedPersons = await _personsService.GetSearchedPersons(searchBy, searchString);
-
-
+        List<PersonResponse> sortedPersons = await _personsService.GetSortedPersons(matchedPersons, sortBy, sortOrder);
+        
         Dictionary<string, string> selectColumns = new Dictionary<string, string>()
         {
             { nameof(PersonResponse.Name), "Person Name" },
             { nameof(PersonResponse.Email), "Email" },
             { nameof(PersonResponse.DateOfBirth), "Birthday Date" },
-            // { nameof(PersonResponse.Age), "Age" },
-            // { nameof(PersonResponse.Gender), "Gender" },
-            // { nameof(PersonResponse.CountryName), "Country" },
             { nameof(PersonResponse.Address), "Address" },
-            { nameof(PersonResponse.RecieveNewsLetters), "Recieve News Letters" }
+            { nameof(PersonResponse.ReceiveNewsLetters), "Recieve News Letters" }
         };
 
-
-        List<PersonResponse> sortedPersons = await _personsService.GetSortedPersons(matchedPersons, sortBy, sortOrder);
         ViewBag.CurrentSortBy = sortBy;
         ViewBag.CurrentSortOrder = sortOrder.ToString();
-
+        
         ViewBag.CurrentSearchBy = searchBy;
         ViewBag.CurrentSearchString = searchString ?? string.Empty;
         ViewBag.SelectColumns = selectColumns;
@@ -74,10 +70,7 @@ public class PersonsController : Controller
     {
         //// Send Country names to view
         List<CountryResponse> allCountries = await _countriesService.GetAllCountries();
-
-        // Just one of the following is required
-        ViewBag.AllCountries1 = allCountries;
-        ViewBag.AllCountries2 = allCountries.Select(item =>
+        ViewBag.AllCountries = allCountries.Select(item =>
             new SelectListItem() 
             {
                 Text = item.Name,
@@ -98,9 +91,7 @@ public class PersonsController : Controller
             //// Send Country names to view
             List<CountryResponse> allCountries = await _countriesService.GetAllCountries();
 
-            // Just one of the following is required
-            ViewBag.AllCountries1 = allCountries;
-            ViewBag.AllCountries2 = allCountries.Select(item =>
+            ViewBag.AllCountries = allCountries.Select(item =>
                 new SelectListItem()
                 {
                     Text = item.Name,
@@ -126,7 +117,6 @@ public class PersonsController : Controller
     public async Task<IActionResult> Edit(Guid ID)
     {
         PersonResponse? person = await _personsService.GetPersonByID(ID);
-        //PersonUpdateRequest = person;
 
         if (person == null)
         {
@@ -151,8 +141,6 @@ public class PersonsController : Controller
     [HttpPost("/persons/edit")]
     public async Task<IActionResult> Edit(PersonUpdateRequest personUpdateRequest)
     {
-        // We do this because we have to check first that the person exists, if we leave that for the 'UpdatePerson',
-        // , it will throw an exception and we don't want that
         PersonResponse? person = await _personsService.GetPersonByID(personUpdateRequest.ID);
 
         if (person == null)
@@ -160,7 +148,7 @@ public class PersonsController : Controller
             return RedirectToAction("Index", "Persons");
         }
 
-        else if (!ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
             List<CountryResponse> allCountries = await _countriesService.GetAllCountries();
             ViewBag.AllCountries = allCountries.Select(item =>
@@ -188,7 +176,6 @@ public class PersonsController : Controller
     public async Task<IActionResult> Delete(Guid ID)
     {
         PersonResponse? person = await _personsService.GetPersonByID(ID);
-        //PersonUpdateRequest = person;
 
         if (person == null)
         {
@@ -203,8 +190,6 @@ public class PersonsController : Controller
     // more correct version -> public IActionResult Delete(Guid ID) -> compilation error due to have same signature
     public async Task<IActionResult> Delete(PersonUpdateRequest personDeleteRequest)
     {
-        // We do this because we have to check first that the person exists, if we leave that for the 'DeletePerson',
-        // , it will throw an exception and we don't want that
         PersonResponse? person = await _personsService.GetPersonByID(personDeleteRequest.ID);
 
         if (person == null)

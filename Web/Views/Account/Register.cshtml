@@ -1,4 +1,7 @@
-﻿@model Core.DTO.RegisterDTO
+﻿@using Core.DTO
+
+@model RegisterDTO
+
 @{
  ViewBag.Title = "Register";
  ViewBag.CurrentUrl = "~/Account/Register";
@@ -95,17 +98,6 @@
 
     <div asp-validation-summary="All" class="text-red"></div>
 
-    @* @if (ViewBag.Errors != null) *@
-    @* { *@
-    @*  <div class="text-red ml"> *@
-    @*   <ul> *@
-    @*    @foreach (string error in ViewBag.Errors) *@
-    @*    { *@
-    @*     <li class="ml">@error</li> *@
-    @*    } *@
-    @*   </ul> *@
-    @*  </div> *@
-    @* } *@
    </div>
   </div>
 

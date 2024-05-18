@@ -1,5 +1,6 @@
 ﻿@using Core.DTO.PersonDTO
-@model IEnumerable<Core.DTO.PersonDTO.PersonResponse>
+
+@model IEnumerable<PersonResponse>
 
 @{
     ViewBag.Title = "Persons";
@@ -112,7 +113,7 @@
 
             @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
             {
-                {"ColumnName", nameof(PersonResponse.RecieveNewsLetters)},
+                {"ColumnName", nameof(PersonResponse.ReceiveNewsLetters)},
                 {"DisplayName", "Receive News Letters"}
             })
 
@@ -130,7 +131,7 @@
                 <td style="width:10%">@person.Gender</td>
                 <td style="width:10%">@person.CountryName</td>
                 <td style="width:13%">@person.Address</td>
-                <td style="width:6%">@person.RecieveNewsLetters</td>
+                <td style="width:6%">@person.ReceiveNewsLetters</td>
 
                 <td style="width:10%">  
                     <a asp-controller="Persons" asp-action="Edit" asp-route-ID=@person.ID class="button-link button-blue-back">Edit</a>
@@ -140,145 +141,3 @@
         }
     </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-@*--------------------OLD VIEW---------------------*@
-
-
-@* @model IEnumerable<PersonResponse> *@
-@* @{ *@
-@*     ViewBag.Title = "Persons"; *@
-@* } *@
-@* *@
-@* <h1>Persons</h1> *@
-@* *@
-@* $1$if using tag helpers: ^asp-controller="persons" asp-action="index"^  equal to -->  ^action="~/persons/index"^#1# *@
-@* <form method="get" action="~/persons/index"> *@
-@*     <div class="box flex">   *@
-@*         $1$searchBy dropdown list#1# *@
-@*         <div class="flex-1"> *@
-@*             $1$Ex: searchBy=abc#1# *@
-@*             <select class="form-input" name="searchBy"> *@
-@*                 @foreach (KeyValuePair<string,string> column in ViewBag.SelectColumns) *@
-@*                 { *@
-@*                     @if (column.Key == ViewBag.CurrentSearchBy) *@
-@*                     { *@
-@*                         <option value="@column.Key" selected="selected">@column.Value</option> *@
-@*                     } *@
-@*                     else *@
-@*                     { *@
-@*                         <option value="@column.Key" >@column.Value</option> *@
-@*                     } *@
-@*                 } *@
-@*             </select> *@
-@*         </div> *@
-@* *@
-@*         $1$searchString input field#1# *@
-@*         <div class="flex-1"> *@
-@*             $1$Ex: searchString=abc#1# *@
-@*             <input class="form-input" id="search-input" name="searchString" type="search" value="@ViewBag.CurrentSearchString" placeholder="Tap to Search" /> *@
-@*         </div> *@
-@* *@
-@*         $1$search button to submit#1# *@
-@*         <div class="flex-1"> *@
-@*              $1$Ex(when submitted): searchBy=abc&searchString=abc#1# *@
-@*             <button class="button button-blue-back" >Search</button> *@
-@* *@
-@*              $1$if using tag helpers: ^asp-controller="persons" asp-action="index"^  equal to -->  ^href="~/persons/index"^#1# *@
-@*             <a class="link-hover" href="~/persons/index">Clear All</a> *@
-@*         </div> *@
-@*     </div> *@
-@* </form> *@
-@* *@
-@* <a class="link-hover" href="~/persons/create">Create Person</a> *@
-@* *@
-@* <table class="table w-100 mt "> *@
-@*     <thead> *@
-@*     <tr> *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.Name)}, *@
-@*             {"DisplayName", "Person Name"} *@
-@*         }) *@
-@*              *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.Email)}, *@
-@*             {"DisplayName", "Email"} *@
-@*         }) *@
-@*              *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.DateOfBirth)}, *@
-@*             {"DisplayName", "Date of Birth"} *@
-@*         }) *@
-@*              *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.Age)}, *@
-@*             {"DisplayName", "Age"} *@
-@*         }) *@
-@*              *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.Gender)}, *@
-@*             {"DisplayName", "Gender"} *@
-@*         }) *@
-@*              *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.CountryName)}, *@
-@*             {"DisplayName", "Country"} *@
-@*         }) *@
-@* *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.Address)}, *@
-@*             {"DisplayName", "Address"} *@
-@*         }) *@
-@* *@
-@*         @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData) *@
-@*         { *@
-@*             {"ColumnName", nameof(PersonResponse.RecieveNewsLetters)}, *@
-@*             {"DisplayName", "Receive News Letters"} *@
-@*         }) *@
-@* *@
-@*         <th>Options</th> *@
-@*     </tr> *@
-@*     </thead> *@
-@*     <tbody> *@
-@*     @foreach (PersonResponse person in Model) *@
-@*     { *@
-@*         <tr> *@
-@*             <td style="width:13%">@person.Name</td> *@
-@*             <td style="width:17%">@person.Email</td> *@
-@*             <td style="width:10%">@person.DateOfBirth?.ToString("yyyy/MM/dd")</td> *@
-@*             <td style="width:5%">@person.Age</td> *@
-@*             <td style="width:10%">@person.Gender</td> *@
-@*             <td style="width:10%">@person.CountryName</td> *@
-@*             <td style="width:13%">@person.Address</td> *@
-@*             <td style="width:10%">@person.RecieveNewsLetters</td> *@
-@* *@
-@*             <td style="width:10%">   *@
-@*                 <a asp-controller="Persons" asp-action="Edit" asp-route-ID=@person.ID>Edit</a> *@
-@*                 <a asp-controller="Persons" asp-action="Delete" asp-route-ID=@person.ID>Delete</a> *@
-@*             </td> *@
-@* *@
-@*             $1$ Without using 'Tag helper': #1# *@
-@*             @*<td style="width:10%"> *@
-@*                     <a href="~/persons/edit/@person.ID">Edit</a> *@
-@*                     <a href="~/persons/delete/@person.ID">Delete</a> *@
-@*                   </td>
-@*         </tr> *@
-@*     } *@
-@*     </tbody> *@
-@* </table> *@

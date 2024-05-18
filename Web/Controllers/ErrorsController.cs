@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Web.Controllers
+
+namespace Web.Controllers;
+
+public class ErrorsController : Controller
 {
-    public class ErrorsController : Controller
+    [Route("Error")]
+    public IActionResult Error()
     {
-        [Route("Error")]
-        public IActionResult Error()
+        IExceptionHandlerPathFeature ? exceptionHandlerPathFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+        if (exceptionHandlerPathFeature != null)
         {
-            IExceptionHandlerPathFeature ? exceptionHandlerPathFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
-            if (exceptionHandlerPathFeature != null)
-            {
-                ViewBag.ErrorMessage = exceptionHandlerPathFeature.Error.Message;
-            }
-            return View(); 
+            ViewBag.ErrorMessage = exceptionHandlerPathFeature.Error.Message;
         }
+        return View(); 
     }
 }

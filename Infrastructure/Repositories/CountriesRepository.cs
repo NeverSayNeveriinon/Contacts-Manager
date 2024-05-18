@@ -1,45 +1,47 @@
-﻿using Core.Domain.Entities;
-using Core.Domain.RepositoryContracts;
+﻿using Microsoft.EntityFrameworkCore;
+
 using Infrastructure.DbContext;
-using Microsoft.EntityFrameworkCore;
+using Core.Domain.Entities;
+using Core.Domain.RepositoryContracts;
 
-namespace Infrastructure.Repositories
+
+namespace Infrastructure.Repositories;
+
+public class CountriesRepository : ICountriesRepository
 {
-    public class CountriesRepository : ICountriesRepository
+    private readonly PersonsDbContext _dbContext;
+    
+    public CountriesRepository(PersonsDbContext dbContext) 
+    { 
+        _dbContext = dbContext;
+    }
+
+    public async Task<Country> AddCountry(Country country)
     {
-        private readonly PersonsDbContext _dbContext;
-        public CountriesRepository(PersonsDbContext dbContext) 
-        { 
-            _dbContext = dbContext;
-        }
+        _dbContext.Countries.Add(country);
+        await _dbContext.SaveChangesAsync();
 
-        public async Task<Country> AddCountry(Country country)
-        {
-            _dbContext.Countries.Add(country);
-            await _dbContext.SaveChangesAsync();
+        return country;
+    }
 
-            return country;
-        }
+    public async Task<List<Country>> GetAllCountries()
+    {
+        var countriesList = await _dbContext.Countries.ToListAsync();
 
-        public async Task<List<Country>> GetAllCountries()
-        {
-            var countriesList = await _dbContext.Countries.ToListAsync();
+        return countriesList;
+    }
 
-            return countriesList;
-        }
+    public async Task<Country?> GetCountryByID(Guid id)
+    {
+        var finalCountry = await _dbContext.Countries.FirstOrDefaultAsync(country => country.ID == id);
 
-        public async Task<Country?> GetCountryByID(Guid id)
-        {
-            var finalCountry = await _dbContext.Countries.FirstOrDefaultAsync(country => country.ID == id);
+        return finalCountry;
+    }
 
-            return finalCountry;
-        }
-
-        public async Task<Country?> GetCountryByName(string name)
-        {
-            var finalCountry = await _dbContext.Countries.FirstOrDefaultAsync(country => country.Name == name);
-            
-            return finalCountry;
-        }
+    public async Task<Country?> GetCountryByName(string name)
+    {
+        var finalCountry = await _dbContext.Countries.FirstOrDefaultAsync(country => country.Name == name);
+        
+        return finalCountry;
     }
 }

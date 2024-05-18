@@ -129,7 +129,7 @@ Host: localhost
                 (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                     valueBuffer: outer, 
                     index: 7, 
-                    property: Property: Person.RecieveNewsLetters (bool) Required), 
+                    property: Property: Person.ReceiveNewsLetters (bool) Required), 
                 ExpressionExtensions.ValueBufferTryReadValue<string>(
                     valueBuffer: outer, 
                     index: 8, 
@@ -176,7 +176,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -223,7 +223,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -404,7 +404,7 @@ Host: localhost
                 (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                     valueBuffer: outer, 
                     index: 7, 
-                    property: Property: Person.RecieveNewsLetters (bool) Required), 
+                    property: Property: Person.ReceiveNewsLetters (bool) Required), 
                 ExpressionExtensions.ValueBufferTryReadValue<string>(
                     valueBuffer: outer, 
                     index: 8, 
@@ -451,7 +451,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -498,7 +498,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -679,7 +679,7 @@ Host: localhost
                 (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                     valueBuffer: outer, 
                     index: 7, 
-                    property: Property: Person.RecieveNewsLetters (bool) Required), 
+                    property: Property: Person.ReceiveNewsLetters (bool) Required), 
                 ExpressionExtensions.ValueBufferTryReadValue<string>(
                     valueBuffer: outer, 
                     index: 8, 
@@ -726,7 +726,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -773,7 +773,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -954,7 +954,7 @@ Host: localhost
                 (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                     valueBuffer: outer, 
                     index: 7, 
-                    property: Property: Person.RecieveNewsLetters (bool) Required), 
+                    property: Property: Person.ReceiveNewsLetters (bool) Required), 
                 ExpressionExtensions.ValueBufferTryReadValue<string>(
                     valueBuffer: outer, 
                     index: 8, 
@@ -1001,7 +1001,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -1048,7 +1048,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -1229,7 +1229,7 @@ Host: localhost
                 (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                     valueBuffer: outer, 
                     index: 7, 
-                    property: Property: Person.RecieveNewsLetters (bool) Required), 
+                    property: Property: Person.ReceiveNewsLetters (bool) Required), 
                 ExpressionExtensions.ValueBufferTryReadValue<string>(
                     valueBuffer: outer, 
                     index: 8, 
@@ -1276,7 +1276,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 
@@ -1323,7 +1323,7 @@ Host: localhost
             (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
                 valueBuffer: valueBuffer, 
                 index: 7, 
-                property: Property: Person.RecieveNewsLetters (bool) Required), 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
             ExpressionExtensions.ValueBufferTryReadValue<string>(
                 valueBuffer: valueBuffer, 
                 index: 8, 

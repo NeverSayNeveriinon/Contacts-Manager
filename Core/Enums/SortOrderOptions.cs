@@ -1,8 +1,7 @@
-﻿namespace Core.Enums
+﻿namespace Core.Enums;
+
+public enum SortOrderOptions : byte
 {
-    public enum SortOrderOptions : byte
-    {
-        ASC,
-        DESC
-    }
+    ASC,
+    DESC
 }

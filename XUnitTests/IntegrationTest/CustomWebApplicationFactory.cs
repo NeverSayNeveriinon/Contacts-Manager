@@ -1,35 +1,34 @@
-﻿using Entities;
-using Infrastructure.DbContext;
-using Web;
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace xUnit_Tests.IntegrationTest
+using Infrastructure.DbContext;
+using Web;
+
+
+namespace xUnit_Tests.IntegrationTest;
+
+public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 {
-    public class CustomWebApplicationFactory : WebApplicationFactory<Program>
+    protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        protected override void ConfigureWebHost(IWebHostBuilder builder)
+        base.ConfigureWebHost(builder);
+
+        builder.UseEnvironment("IntegrationTest");
+
+        builder.ConfigureServices(services =>
         {
-            base.ConfigureWebHost(builder);
-
-            builder.UseEnvironment("IntegrationTest");
-
-            builder.ConfigureServices(services =>
+            var descriptor = services.SingleOrDefault(descriptor => descriptor.ServiceType == typeof(DbContextOptions<PersonsDbContext>));
+            if (descriptor is not null)
             {
-                var descriptor = services.SingleOrDefault(descriptor => descriptor.ServiceType == typeof(DbContextOptions<PersonsDbContext>));
-                if (descriptor is not null)
-                {
-                    services.Remove(descriptor);
-                }
+                services.Remove(descriptor);
+            }
 
-                services.AddDbContext<PersonsDbContext>(options =>
-                {
-                    options.UseInMemoryDatabase("InMemoryDataBase");
-                });
+            services.AddDbContext<PersonsDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("InMemoryDataBase");
             });
-        }
+        });
     }
 }

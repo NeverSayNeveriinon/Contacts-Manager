@@ -1,9 +1,10 @@
 ﻿@using Core.DTO.PersonDTO
-@model IEnumerable<Core.DTO.PersonDTO.PersonResponse>
+
+@model IEnumerable<PersonResponse>
 
 @{
     ViewBag.Title = "Home";
-    ViewBag.CurrentUrl = "~/";
+    ViewBag.CurrentUrl = "~/home/index";
 }
 
 <form asp-controller="Home" asp-action="Index" method="get">
@@ -66,7 +67,7 @@
     {
          <div class="grid_item">
              <div class="grid_item_pic">
-                 <img src="default_human.jpg" />
+                 <img src="~/default_human.jpg" alt="avatar picture"/>
              </div>
              <div class="grid_item_info">
                    <div>  <p class="label">@nameof(person.Name): </p> <p>@person.Name</p>  </div>
@@ -76,7 +77,7 @@
                    <div>  <p class="label">@nameof(person.Gender): </p> <p>@person.Gender</p>  </div>
                    <div>  <p class="label">@nameof(person.CountryName): </p> <p>@person.CountryName</p>  </div>
                    <div>  <p class="label">@nameof(person.Address): </p> <p>@person.Address</p>  </div>
-                   <div>  <p class="label">@nameof(person.RecieveNewsLetters): </p> <p>@person.RecieveNewsLetters</p>  </div>   
+                   <div>  <p class="label">@nameof(person.ReceiveNewsLetters): </p> <p>@person.ReceiveNewsLetters</p>  </div>   
             </div>
          </div>
     }

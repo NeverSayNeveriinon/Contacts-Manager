@@ -39,7 +39,7 @@
 
                                 if (User.IsInRole("Admin"))
                                 {
-                                    if (ViewBag.CurrentUrl == "~/")
+                                    if (ViewBag.CurrentUrl == "~/home/index")
                                     {
                                         <li>
                                             <a asp-controller="Persons" asp-action="Index" asp-area="Admin">Admin Persons</a>
@@ -92,7 +92,7 @@
 
         <div class="navbar mb">
             <ul>
-                @if (ViewBag.CurrentUrl == "~/")
+                @if (ViewBag.CurrentUrl == "~/home/index")
                 {
                     <li>
                         <a asp-controller="Home" asp-action="Index" class="nav-active">Home Persons</a>

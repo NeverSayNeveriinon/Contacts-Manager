@@ -1,9 +1,8 @@
-﻿namespace Core.Enums
+﻿namespace Core.Enums;
+
+public enum GenderOptions : byte
 {
-    public enum GenderOptions : byte
-    {
-        Male,
-        Female,
-        Other
-    }
+    Male,
+    Female,
+    Other
 }

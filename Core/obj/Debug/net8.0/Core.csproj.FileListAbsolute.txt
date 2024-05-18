@@ -22,3 +22,4 @@ C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.d
 C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.pdb
 C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Visual Studio\Personal Projects\Contacts Manager\Core\obj\Debug\net8.0\Core.sourcelink.json

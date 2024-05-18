@@ -1,5 +1,6 @@
-﻿@*this line which represents that the view is 'Strongly Typed view' has two benefits is just necessary for using 'Tag Helpers' (and benefits of st ty views)*@
-@model Core.DTO.PersonDTO.PersonResponse
+﻿@using Core.DTO.PersonDTO
+
+@model PersonResponse
 
 @{
     ViewBag.Title = "Delete Person";
@@ -26,7 +27,6 @@
     <h2 class="text-large">Delete Person</h2>
     <h3>Are you sure to delete this person?</h3>
     
-    @*if using tag helpers: ^asp-controller="persons" asp-action="delete"^  equal to -->  ^action="~/persons/delete"^*@
     <form action="~/persons/delete" method="post">
 
         @*Hidden 'ID' field*@
@@ -67,21 +67,8 @@
                 <button class="button button-red-back">Delete</button>
 
                 @*All Errors*@
-                @* Way1: This 'div' will work without the 'span' tags after the 'input' tags, so they are not related to each other *@
                 <div asp-validation-summary="All" class="text-red"></div>
 
-
-                @*All Errors*@
-                @* Way2: the errors list from controller*@
-                @* @if (ViewBag.ErrorsList != null)
-                {
-                    <ul class="text-red ml">
-                        @foreach (var error in ViewBag.ErrorsList)
-                        {
-                            <li class="ml">@error</li>
-                        }
-                    </ul>
-                } *@
             </div>
         </div>
     </form>
@@ -101,9 +88,3 @@
             asp-fallback-src="~/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive"></script>
 }
 
-
-
-@*##Tips##*@
-@*1) Since no input exist in this view (the 'name' and 'email' are disabled), so user can't enter any value to any field,
-     , so there is no need for client-validation in this view (but i just kept that cause there was no harm) *@
-@*2) *@
