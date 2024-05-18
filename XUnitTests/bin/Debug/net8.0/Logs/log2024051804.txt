@@ -1,0 +1,348 @@
+2024-05-18 04:58:15.519 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-18 04:58:15.588 +03:30 [DBG] Hosting starting
+2024-05-18 04:58:15.595 +03:30 [INF] User profile is available. Using 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 04:58:15.603 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-71022885-dd6e-4623-96bb-10c3270b059f.xml'.
+2024-05-18 04:58:15.605 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-73f35564-d991-4ee2-bb9b-eaea38796e1f.xml'.
+2024-05-18 04:58:15.606 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-7efc63d2-68c1-42ac-8166-ef66096b4d14.xml'.
+2024-05-18 04:58:15.611 +03:30 [DBG] Found key {71022885-dd6e-4623-96bb-10c3270b059f}.
+2024-05-18 04:58:15.614 +03:30 [DBG] Found key {73f35564-d991-4ee2-bb9b-eaea38796e1f}.
+2024-05-18 04:58:15.614 +03:30 [DBG] Found key {7efc63d2-68c1-42ac-8166-ef66096b4d14}.
+2024-05-18 04:58:15.617 +03:30 [DBG] Considering key {73f35564-d991-4ee2-bb9b-eaea38796e1f} with expiration date 2024-05-27 13:57:38Z as default key.
+2024-05-18 04:58:15.619 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:58:15.620 +03:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-18 04:58:15.621 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:58:15.623 +03:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-18 04:58:15.625 +03:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-18 04:58:15.626 +03:30 [DBG] Using key {73f35564-d991-4ee2-bb9b-eaea38796e1f} as the default key.
+2024-05-18 04:58:15.626 +03:30 [DBG] Key ring with default key {73f35564-d991-4ee2-bb9b-eaea38796e1f} was loaded during application startup.
+2024-05-18 04:58:15.636 +03:30 [DBG] Loaded hosting startup assembly Web
+2024-05-18 04:58:15.637 +03:30 [DBG] Hosting started
+2024-05-18 04:58:15.898 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-05-18 04:58:15.900 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-18 04:58:15.901 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:58:15.901 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-05-18 04:58:15.905 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2024-05-18 04:58:15.905 +03:30 [DBG] The request path /Persons/Index does not match a supported file type
+2024-05-18 04:58:15.916 +03:30 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2024-05-18 04:58:15.918 +03:30 [DBG] Endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)' with route pattern 'persons/index' is valid for the request path '/Persons/Index'
+2024-05-18 04:58:15.918 +03:30 [DBG] Request matched endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)'
+2024-05-18 04:58:15.925 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:58:15.927 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:58:15.928 +03:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-05-18 04:58:15.933 +03:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-18 04:58:15.933 +03:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:15.935 +03:30 [INF] HTTP GET /Persons/Index responded 302 in 32.0257 ms
+2024-05-18 04:58:15.939 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 302 null null 41.3877ms
+2024-05-18 04:58:15.941 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - null null
+2024-05-18 04:58:15.942 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:58:15.942 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+Host: localhost
+2024-05-18 04:58:15.942 +03:30 [DBG] The request path /Account/Login does not match a supported file type
+2024-05-18 04:58:15.942 +03:30 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2024-05-18 04:58:15.942 +03:30 [DBG] Endpoint 'Web.Controllers.AccountController.Login (Web)' with route pattern 'Account/Login' is valid for the request path '/Account/Login'
+2024-05-18 04:58:15.942 +03:30 [DBG] Request matched endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:15.944 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:58:15.945 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:58:15.945 +03:30 [DBG] Authorization was successful.
+2024-05-18 04:58:15.946 +03:30 [INF] Executing endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:15.953 +03:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Web.Controllers.AccountController (Web).
+2024-05-18 04:58:15.955 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+2024-05-18 04:58:15.955 +03:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:58:15.955 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-05-18 04:58:15.955 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-18 04:58:15.955 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:58:15.957 +03:30 [DBG] Executing controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:58:16.020 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-18 04:58:16.052 +03:30 [DBG] Executed controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:58:16.057 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Create.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Delete.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Edit.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Index.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewImports.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewStart.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-05-18 04:58:16.058 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-05-18 04:58:16.061 +03:30 [DBG] View lookup cache miss for view 'Login' in controller 'Account'.
+2024-05-18 04:58:16.065 +03:30 [INF] Executing ViewResult, running view Login.
+2024-05-18 04:58:16.067 +03:30 [DBG] The view path '/Views/Account/Login.cshtml' was found in 4.3753ms.
+2024-05-18 04:58:16.094 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:58:16.095 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:58:16.102 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:58:16.108 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (ReturnUrl=[/Persons/Index],action=[Login],controller=[Account])
+2024-05-18 04:58:16.109 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and ?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:16.109 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:16.113 +03:30 [DBG] A new antiforgery cookie token was created.
+2024-05-18 04:58:16.137 +03:30 [DBG] View lookup cache miss for view '_Layout' in controller 'Account'.
+2024-05-18 04:58:16.171 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:58:16.171 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:58:16.172 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:58:16.174 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2024-05-18 04:58:16.176 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and 
+2024-05-18 04:58:16.176 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login
+2024-05-18 04:58:16.177 +03:30 [DBG] Found the endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-18 04:58:16.178 +03:30 [DBG] Successfully processed template  for Web.Controllers.HomeController.Index (Web) resulting in  and 
+2024-05-18 04:58:16.178 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-18 04:58:16.187 +03:30 [INF] Executed ViewResult - view Login executed in 126.2327ms.
+2024-05-18 04:58:16.187 +03:30 [INF] Executed action Web.Controllers.AccountController.Login (Web) in 232.0785ms
+2024-05-18 04:58:16.187 +03:30 [INF] Executed endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:16.188 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Set-Cookie: [Redacted]
+X-Frame-Options: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+2024-05-18 04:58:16.188 +03:30 [INF] HTTP GET /Account/Login responded 200 in 245.9983 ms
+2024-05-18 04:58:16.192 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - 200 null text/html; charset=utf-8 250.0299ms
+2024-05-18 04:58:37.595 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-18 04:58:37.647 +03:30 [DBG] Hosting starting
+2024-05-18 04:58:37.655 +03:30 [INF] User profile is available. Using 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 04:58:37.662 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-71022885-dd6e-4623-96bb-10c3270b059f.xml'.
+2024-05-18 04:58:37.663 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-73f35564-d991-4ee2-bb9b-eaea38796e1f.xml'.
+2024-05-18 04:58:37.664 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-7efc63d2-68c1-42ac-8166-ef66096b4d14.xml'.
+2024-05-18 04:58:37.666 +03:30 [DBG] Found key {71022885-dd6e-4623-96bb-10c3270b059f}.
+2024-05-18 04:58:37.668 +03:30 [DBG] Found key {73f35564-d991-4ee2-bb9b-eaea38796e1f}.
+2024-05-18 04:58:37.668 +03:30 [DBG] Found key {7efc63d2-68c1-42ac-8166-ef66096b4d14}.
+2024-05-18 04:58:37.672 +03:30 [DBG] Considering key {73f35564-d991-4ee2-bb9b-eaea38796e1f} with expiration date 2024-05-27 13:57:38Z as default key.
+2024-05-18 04:58:37.674 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:58:37.675 +03:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-18 04:58:37.676 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:58:37.677 +03:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-18 04:58:37.679 +03:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-18 04:58:37.681 +03:30 [DBG] Using key {73f35564-d991-4ee2-bb9b-eaea38796e1f} as the default key.
+2024-05-18 04:58:37.681 +03:30 [DBG] Key ring with default key {73f35564-d991-4ee2-bb9b-eaea38796e1f} was loaded during application startup.
+2024-05-18 04:58:37.689 +03:30 [DBG] Loaded hosting startup assembly Web
+2024-05-18 04:58:37.689 +03:30 [DBG] Hosting started
+2024-05-18 04:58:37.713 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-05-18 04:58:37.714 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-18 04:58:37.715 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:58:37.715 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-05-18 04:58:37.718 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2024-05-18 04:58:37.718 +03:30 [DBG] The request path /Persons/Index does not match a supported file type
+2024-05-18 04:58:37.729 +03:30 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2024-05-18 04:58:37.731 +03:30 [DBG] Endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)' with route pattern 'persons/index' is valid for the request path '/Persons/Index'
+2024-05-18 04:58:37.732 +03:30 [DBG] Request matched endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)'
+2024-05-18 04:58:37.738 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:58:37.739 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:58:37.741 +03:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-05-18 04:58:37.742 +03:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-18 04:58:37.743 +03:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:37.744 +03:30 [INF] HTTP GET /Persons/Index responded 302 in 27.5999 ms
+2024-05-18 04:58:37.747 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 302 null null 35.3483ms
+2024-05-18 04:58:37.749 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - null null
+2024-05-18 04:58:37.749 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:58:37.749 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+Host: localhost
+2024-05-18 04:58:37.749 +03:30 [DBG] The request path /Account/Login does not match a supported file type
+2024-05-18 04:58:37.750 +03:30 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2024-05-18 04:58:37.750 +03:30 [DBG] Endpoint 'Web.Controllers.AccountController.Login (Web)' with route pattern 'Account/Login' is valid for the request path '/Account/Login'
+2024-05-18 04:58:37.750 +03:30 [DBG] Request matched endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:37.751 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:58:37.752 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:58:37.752 +03:30 [DBG] Authorization was successful.
+2024-05-18 04:58:37.753 +03:30 [INF] Executing endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:37.759 +03:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Web.Controllers.AccountController (Web).
+2024-05-18 04:58:37.759 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+2024-05-18 04:58:37.760 +03:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:58:37.760 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-05-18 04:58:37.760 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-18 04:58:37.760 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:58:37.761 +03:30 [DBG] Executing controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:58:37.812 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-18 04:58:37.830 +03:30 [DBG] Executed controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:58:37.832 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Create.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Delete.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Edit.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Index.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewImports.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewStart.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-05-18 04:58:37.833 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-05-18 04:58:37.836 +03:30 [DBG] View lookup cache miss for view 'Login' in controller 'Account'.
+2024-05-18 04:58:37.838 +03:30 [INF] Executing ViewResult, running view Login.
+2024-05-18 04:58:37.840 +03:30 [DBG] The view path '/Views/Account/Login.cshtml' was found in 2.7054ms.
+2024-05-18 04:58:37.885 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:58:37.886 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:58:37.887 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:58:37.894 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (ReturnUrl=[/Persons/Index],action=[Login],controller=[Account])
+2024-05-18 04:58:37.894 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and ?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:37.894 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:58:37.900 +03:30 [DBG] A new antiforgery cookie token was created.
+2024-05-18 04:58:37.927 +03:30 [DBG] View lookup cache miss for view '_Layout' in controller 'Account'.
+2024-05-18 04:58:37.959 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:58:37.960 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:58:37.960 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:58:37.962 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2024-05-18 04:58:37.963 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and 
+2024-05-18 04:58:37.963 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login
+2024-05-18 04:58:37.964 +03:30 [DBG] Found the endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-18 04:58:37.964 +03:30 [DBG] Successfully processed template  for Web.Controllers.HomeController.Index (Web) resulting in  and 
+2024-05-18 04:58:37.964 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-18 04:58:37.972 +03:30 [INF] Executed ViewResult - view Login executed in 136.364ms.
+2024-05-18 04:58:37.972 +03:30 [INF] Executed action Web.Controllers.AccountController.Login (Web) in 211.648ms
+2024-05-18 04:58:37.972 +03:30 [INF] Executed endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:58:37.972 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Set-Cookie: [Redacted]
+X-Frame-Options: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+2024-05-18 04:58:37.972 +03:30 [INF] HTTP GET /Account/Login responded 200 in 223.2115 ms
+2024-05-18 04:58:37.979 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - 200 null text/html; charset=utf-8 230.0692ms
+2024-05-18 04:59:34.528 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-18 04:59:34.586 +03:30 [DBG] Hosting starting
+2024-05-18 04:59:34.594 +03:30 [INF] User profile is available. Using 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 04:59:34.602 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-71022885-dd6e-4623-96bb-10c3270b059f.xml'.
+2024-05-18 04:59:34.604 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-73f35564-d991-4ee2-bb9b-eaea38796e1f.xml'.
+2024-05-18 04:59:34.605 +03:30 [DBG] Reading data from file 'C:\Users\Piotr\AppData\Local\ASP.NET\DataProtection-Keys\key-7efc63d2-68c1-42ac-8166-ef66096b4d14.xml'.
+2024-05-18 04:59:34.607 +03:30 [DBG] Found key {71022885-dd6e-4623-96bb-10c3270b059f}.
+2024-05-18 04:59:34.609 +03:30 [DBG] Found key {73f35564-d991-4ee2-bb9b-eaea38796e1f}.
+2024-05-18 04:59:34.609 +03:30 [DBG] Found key {7efc63d2-68c1-42ac-8166-ef66096b4d14}.
+2024-05-18 04:59:34.612 +03:30 [DBG] Considering key {73f35564-d991-4ee2-bb9b-eaea38796e1f} with expiration date 2024-05-27 13:57:38Z as default key.
+2024-05-18 04:59:34.614 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:59:34.615 +03:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-18 04:59:34.616 +03:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-18 04:59:34.617 +03:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-18 04:59:34.619 +03:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-18 04:59:34.621 +03:30 [DBG] Using key {73f35564-d991-4ee2-bb9b-eaea38796e1f} as the default key.
+2024-05-18 04:59:34.621 +03:30 [DBG] Key ring with default key {73f35564-d991-4ee2-bb9b-eaea38796e1f} was loaded during application startup.
+2024-05-18 04:59:34.632 +03:30 [DBG] Loaded hosting startup assembly Web
+2024-05-18 04:59:34.632 +03:30 [DBG] Hosting started
+2024-05-18 04:59:34.654 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - null null
+2024-05-18 04:59:34.656 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-18 04:59:34.657 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:59:34.657 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-05-18 04:59:34.660 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2024-05-18 04:59:34.667 +03:30 [DBG] The request path /Persons/Index does not match a supported file type
+2024-05-18 04:59:34.677 +03:30 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2024-05-18 04:59:34.679 +03:30 [DBG] Endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)' with route pattern 'persons/index' is valid for the request path '/Persons/Index'
+2024-05-18 04:59:34.680 +03:30 [DBG] Request matched endpoint 'Web.Areas.Admin.Controllers.PersonsController.Index (Web)'
+2024-05-18 04:59:34.687 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:59:34.690 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:59:34.691 +03:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-05-18 04:59:34.693 +03:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-18 04:59:34.694 +03:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:59:34.695 +03:30 [INF] HTTP GET /Persons/Index responded 302 in 36.3291 ms
+2024-05-18 04:59:34.698 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - 302 null null 44.9059ms
+2024-05-18 04:59:34.700 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - null null
+2024-05-18 04:59:34.700 +03:30 [DBG] The request is insecure. Skipping HSTS header.
+2024-05-18 04:59:34.701 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+Host: localhost
+2024-05-18 04:59:34.701 +03:30 [DBG] The request path /Account/Login does not match a supported file type
+2024-05-18 04:59:34.701 +03:30 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2024-05-18 04:59:34.701 +03:30 [DBG] Endpoint 'Web.Controllers.AccountController.Login (Web)' with route pattern 'Account/Login' is valid for the request path '/Account/Login'
+2024-05-18 04:59:34.701 +03:30 [DBG] Request matched endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:59:34.703 +03:30 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2024-05-18 04:59:34.703 +03:30 [DBG] Policy authentication schemes  did not succeed
+2024-05-18 04:59:34.704 +03:30 [DBG] Authorization was successful.
+2024-05-18 04:59:34.705 +03:30 [INF] Executing endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:59:34.711 +03:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Web.Controllers.AccountController (Web).
+2024-05-18 04:59:34.712 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+2024-05-18 04:59:34.712 +03:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:59:34.712 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-05-18 04:59:34.712 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-18 04:59:34.712 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-05-18 04:59:34.714 +03:30 [DBG] Executing controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:59:34.774 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-18 04:59:34.792 +03:30 [DBG] Executed controller factory for controller Web.Controllers.AccountController (Web)
+2024-05-18 04:59:34.795 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Create.cshtml'.
+2024-05-18 04:59:34.795 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Delete.cshtml'.
+2024-05-18 04:59:34.795 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Edit.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Persons/Index.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewImports.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/_ViewStart.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-05-18 04:59:34.796 +03:30 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-05-18 04:59:34.799 +03:30 [DBG] View lookup cache miss for view 'Login' in controller 'Account'.
+2024-05-18 04:59:34.803 +03:30 [INF] Executing ViewResult, running view Login.
+2024-05-18 04:59:34.805 +03:30 [DBG] The view path '/Views/Account/Login.cshtml' was found in 4.941ms.
+2024-05-18 04:59:34.850 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:59:34.851 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:59:34.852 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:59:34.859 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (ReturnUrl=[/Persons/Index],action=[Login],controller=[Account])
+2024-05-18 04:59:34.859 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and ?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:59:34.859 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-05-18 04:59:34.862 +03:30 [DBG] A new antiforgery cookie token was created.
+2024-05-18 04:59:34.887 +03:30 [DBG] View lookup cache miss for view '_Layout' in controller 'Account'.
+2024-05-18 04:59:34.914 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Register],controller=[Account])
+2024-05-18 04:59:34.914 +03:30 [DBG] Successfully processed template Account/Register for Web.Controllers.AccountController.Register (Web) resulting in /Account/Register and 
+2024-05-18 04:59:34.914 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Register (Web)","Web.Controllers.AccountController.Register (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Register
+2024-05-18 04:59:34.920 +03:30 [DBG] Found the endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2024-05-18 04:59:34.920 +03:30 [DBG] Successfully processed template Account/Login for Web.Controllers.AccountController.Login (Web) resulting in /Account/Login and 
+2024-05-18 04:59:34.920 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.AccountController.Login (Web)","Web.Controllers.AccountController.Login (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /Account/Login
+2024-05-18 04:59:34.921 +03:30 [DBG] Found the endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] for address (action=[Index],controller=[Home])
+2024-05-18 04:59:34.921 +03:30 [DBG] Successfully processed template  for Web.Controllers.HomeController.Index (Web) resulting in  and 
+2024-05-18 04:59:34.921 +03:30 [DBG] Link generation succeeded for endpoints ["Web.Controllers.HomeController.Index (Web)","Route: {area:exists}/{controller=Persons}/{action=Index}/{id?}"] with result /
+2024-05-18 04:59:34.929 +03:30 [INF] Executed ViewResult - view Login executed in 131.1456ms.
+2024-05-18 04:59:34.930 +03:30 [INF] Executed action Web.Controllers.AccountController.Login (Web) in 217.0271ms
+2024-05-18 04:59:34.930 +03:30 [INF] Executed endpoint 'Web.Controllers.AccountController.Login (Web)'
+2024-05-18 04:59:34.930 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Set-Cookie: [Redacted]
+X-Frame-Options: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+2024-05-18 04:59:34.930 +03:30 [INF] HTTP GET /Account/Login responded 200 in 229.5051 ms
+2024-05-18 04:59:34.938 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2FPersons%2FIndex - 200 null text/html; charset=utf-8 237.8669ms

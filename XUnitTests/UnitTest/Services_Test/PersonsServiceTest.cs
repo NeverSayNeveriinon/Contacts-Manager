@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using Serilog;
 
-namespace xUnit_Tests.UnitTest
+namespace xUnit_Tests.UnitTest.Services
 {
     public class PersonsServiceTest
     {

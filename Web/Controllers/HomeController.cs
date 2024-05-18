@@ -24,6 +24,7 @@ namespace Web.Controllers
 
         // 'Home' page //
         [Route("/")]
+        [Route("/home/index")]
         public async Task<IActionResult> Index(string searchBy, string? searchString,
             string sortBy = nameof(PersonResponse.Name),
             SortOrderOptions sortOrder = SortOrderOptions.ASC)
