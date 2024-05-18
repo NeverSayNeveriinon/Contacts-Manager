@@ -29,7 +29,7 @@ public class PersonsDbContext : IdentityDbContext<ApplicationUser,ApplicationRol
         // Seed Data for Country //
 
         // Read the json file into a string
-        string countriesSeed_Path = @"C:\Visual Studio\Asp.Net Core MVC\With_Repository\With_Repository\wwwroot\JSON\seed_countries.json";
+        string countriesSeed_Path = "../Web/wwwroot/JSON/seed_countries.json";
         string countriesSeed_Json = File.ReadAllText(countriesSeed_Path);
             
         // Deserialize the json file to 'a List of Country'
@@ -42,7 +42,7 @@ public class PersonsDbContext : IdentityDbContext<ApplicationUser,ApplicationRol
         // Seed Data for Person //
 
         // Read the json file into a string
-        string personsSeed_Path = @"C:\Visual Studio\Asp.Net Core MVC\With_Repository\With_Repository\wwwroot\JSON\seed_persons.json";
+        string personsSeed_Path = "../Web/wwwroot/JSON/seed_persons.json";
         string personsSeed_Json = File.ReadAllText(personsSeed_Path);
 
         // Deserialize the json file to 'a List of Person'

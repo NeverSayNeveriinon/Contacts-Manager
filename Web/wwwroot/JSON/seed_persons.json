@@ -63,7 +63,7 @@
     "ID": "59163933-774F-4ECB-BDBC-BD459EA56499",
     "Name": "Kevin",
     "Email": "kevin.fake.mail@gmail.com",
-    "DateOfBirth": "1998/12/08",
+    "DateOfBirth": "1998-12-08",
     "Gender": "Male",
     "CountryID": "56bf46a4-02b8-4693-a0f5-0a95e2218bdc",
     "Address": "London, st 28",
@@ -74,7 +74,7 @@
     "Name": "kevinJill",
     "Email": "jill.fake.mail@gmail.com",
     "Address": "Stockholm, st 58",
-    "DateOfBirth": "2004/11/11",
+    "DateOfBirth": "2004-11-11",
     "Gender": "Female",
     "CountryID": "501c6d33-1bbe-45f1-8fbd-2275913c6218",
     "ReceiveNewsLetters": false
@@ -84,7 +84,7 @@
     "Name": "Nora",
     "Email": "nora.fake.mail@gmail.com",
     "Address": "London, st 49",
-    "DateOfBirth": "1996/02/01",
+    "DateOfBirth": "1996-02-01",
     "Gender": "Female",
     "CountryID": "56bf46a4-02b8-4693-a0f5-0a95e2218bdc",
     "ReceiveNewsLetters": true
@@ -94,7 +94,7 @@
     "Name": "Rachel",
     "Email": "rachel.fake.mail@gmail.com",
     "Address": "NewYork, st 89",
-    "DateOfBirth": "1995/04/04",
+    "DateOfBirth": "1995-04-04",
     "Gender": "Female",
     "CountryID": "12e15727-d369-49a9-8b13-bc22e9362179",
     "ReceiveNewsLetters": true
@@ -104,7 +104,7 @@
     "Name": "Chandler",
     "Email": "chandler.fake.mail@gmail.com",
     "Address": "NewYork, st 88",
-    "DateOfBirth": "1992/09/09",
+    "DateOfBirth": "1992-09-09",
     "Gender": "Male",
     "CountryID": "12e15727-d369-49a9-8b13-bc22e9362179",
     "ReceiveNewsLetters": false

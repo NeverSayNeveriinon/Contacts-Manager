@@ -1,0 +1,1302 @@
+2024-05-19 03:02:28.941 +03:30 [INF] Application is shutting down...
+2024-05-19 03:02:28.942 +03:30 [DBG] Hosting stopping
+2024-05-19 03:02:28.948 +03:30 [DBG] Hosting stopped
+2024-05-19 03:02:39.334 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:03:23.366 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:03:23.635 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:03:23.639 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:03:23.799 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:03:23.821 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:03:23.824 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:03:24.361 +03:30 [DBG] Creating DbConnection.
+2024-05-19 03:03:24.366 +03:30 [DBG] Created DbConnection. (3ms).
+2024-05-19 03:03:24.371 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.383 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.389 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.392 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-19 03:03:25.393 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+2024-05-19 03:03:25.397 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.406 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.408 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.411 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:03:25.414 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:03:25.415 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:25.415 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:03:25.416 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.417 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.418 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.430 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.432 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.434 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:03:25.442 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.442 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.443 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:03:25.443 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:03:25.444 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:03:25.445 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:25.447 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:25.450 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.451 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2024-05-19 03:03:25.452 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.452 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.455 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.456 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.457 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.457 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.458 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.458 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.459 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.461 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.462 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.462 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.463 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:03:25.463 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:25.464 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:25.464 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.465 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.465 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.467 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.468 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.469 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.470 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.470 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.471 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.472 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.472 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.473 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.483 +03:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:25.484 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.485 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.486 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:03:25.486 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:25.487 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:03:25.488 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.488 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.489 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.492 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:25.493 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.493 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.494 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.495 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.495 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:03:25.496 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:03:25.496 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-05-19 03:03:25.497 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:25.500 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:25.501 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.501 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2024-05-19 03:03:25.502 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.503 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.506 +03:30 [INF] Reverting migration '20240518232607_Initial'.
+2024-05-19 03:03:25.513 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.514 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.517 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-19 03:03:25.521 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-19 03:03:25.522 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.523 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.524 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-19 03:03:25.525 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoleClaims];
+2024-05-19 03:03:25.527 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoleClaims];
+2024-05-19 03:03:25.528 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.529 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.529 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.530 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserClaims];
+2024-05-19 03:03:25.532 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserClaims];
+2024-05-19 03:03:25.533 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.533 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.534 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.534 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserLogins];
+2024-05-19 03:03:25.536 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserLogins];
+2024-05-19 03:03:25.537 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.538 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.539 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.539 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserRoles];
+2024-05-19 03:03:25.542 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserRoles];
+2024-05-19 03:03:25.543 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.543 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.544 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.544 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserTokens];
+2024-05-19 03:03:25.546 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserTokens];
+2024-05-19 03:03:25.547 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.547 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.548 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.548 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Persons];
+2024-05-19 03:03:25.551 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Persons];
+2024-05-19 03:03:25.552 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.552 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.553 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.553 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoles];
+2024-05-19 03:03:25.555 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoles];
+2024-05-19 03:03:25.556 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.557 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.557 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.558 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUsers];
+2024-05-19 03:03:25.560 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUsers];
+2024-05-19 03:03:25.561 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.561 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.561 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.562 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Countries];
+2024-05-19 03:03:25.563 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Countries];
+2024-05-19 03:03:25.564 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:25.565 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:25.566 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:25.566 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240518232607_Initial';
+2024-05-19 03:03:25.568 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240518232607_Initial';
+2024-05-19 03:03:25.570 +03:30 [DBG] Committing transaction.
+2024-05-19 03:03:25.572 +03:30 [DBG] Committed transaction.
+2024-05-19 03:03:25.574 +03:30 [DBG] Disposing transaction.
+2024-05-19 03:03:25.574 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.575 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:25.579 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:03:25.580 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:25.582 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-05-19 03:03:35.767 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:03:36.030 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:03:36.033 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:03:36.188 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:03:36.208 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:03:36.211 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:03:36.771 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:03:45.791 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:03:46.165 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:03:46.168 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:03:46.385 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:03:46.396 +03:30 [DBG] Creating DbConnection.
+2024-05-19 03:03:46.399 +03:30 [DBG] Created DbConnection. (2ms).
+2024-05-19 03:03:46.402 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:46.406 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.433 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.439 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.443 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2024-05-19 03:03:47.444 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2024-05-19 03:03:47.447 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:47.457 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:47.459 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.462 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:03:47.464 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:03:47.464 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:47.465 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:03:47.465 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.466 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.467 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:47.476 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:47.477 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.478 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:47.479 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.480 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.480 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.481 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.482 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.482 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:47.485 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:03:47.486 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.486 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:47.487 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:03:47.487 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:47.488 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:03:47.488 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.489 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.490 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:47.492 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:03:47.493 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.494 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:47.502 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.503 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.504 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:03:47.504 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:03:47.505 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:03:47.506 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:47.508 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:03:47.510 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.511 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2024-05-19 03:03:47.512 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.512 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:47.519 +03:30 [INF] Applying migration '20240518233336_Initial'.
+2024-05-19 03:03:47.580 +03:30 [DBG] Executing 2 update commands as a batch.
+2024-05-19 03:03:47.590 +03:30 [DBG] Executing 5 update commands as a batch.
+2024-05-19 03:03:47.592 +03:30 [DBG] Executing 11 update commands as a batch.
+2024-05-19 03:03:47.597 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.598 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.600 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-19 03:03:47.604 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-19 03:03:47.605 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.606 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.607 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.608 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-05-19 03:03:47.610 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-05-19 03:03:47.612 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.613 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.613 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.614 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [PersonName] nvarchar(max) NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-05-19 03:03:47.616 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [PersonName] nvarchar(max) NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-05-19 03:03:47.617 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.618 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.618 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.619 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(20) NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([ID])
+);
+2024-05-19 03:03:47.621 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(20) NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([ID])
+);
+2024-05-19 03:03:47.622 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.623 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.623 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.624 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.626 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.628 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.628 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.629 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.629 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.631 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.632 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.633 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.633 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.634 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.636 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.637 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.638 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.638 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.639 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.641 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.642 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.643 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.643 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.644 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.646 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.647 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.647 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.648 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.649 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Persons] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    [Email] nvarchar(50) NOT NULL,
+    [DateOfBirth] datetime2 NULL,
+    [Gender] nvarchar(10) NOT NULL,
+    [Address] nvarchar(200) NULL,
+    [ReceiveNewsLetters] bit NOT NULL,
+    [TINumber] varchar(11) NULL DEFAULT 'ABCDEFGH123',
+    [CountryID] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Persons] PRIMARY KEY ([ID]),
+    CONSTRAINT [CHK_TINumber] CHECK (len([TINumber]) = 11),
+    CONSTRAINT [FK_Persons_Countries_CountryID] FOREIGN KEY ([CountryID]) REFERENCES [Countries] ([ID]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.651 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Persons] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    [Email] nvarchar(50) NOT NULL,
+    [DateOfBirth] datetime2 NULL,
+    [Gender] nvarchar(10) NOT NULL,
+    [Address] nvarchar(200) NULL,
+    [ReceiveNewsLetters] bit NOT NULL,
+    [TINumber] varchar(11) NULL DEFAULT 'ABCDEFGH123',
+    [CountryID] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Persons] PRIMARY KEY ([ID]),
+    CONSTRAINT [CHK_TINumber] CHECK (len([TINumber]) = 11),
+    CONSTRAINT [FK_Persons_Countries_CountryID] FOREIGN KEY ([CountryID]) REFERENCES [Countries] ([ID]) ON DELETE CASCADE
+);
+2024-05-19 03:03:47.652 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.652 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.653 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.653 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('211d03ae-07fe-4cb4-813e-163f46568b44', N'4A191780-214E-47D6-83B8-4345A61E804C', N'User', N'USER'),
+('a9c2bc35-61fe-4e60-8158-2bfd6e1478eb', N'7DB6149D-F1EE-4A0B-BA7B-D99E41414D73', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-05-19 03:03:47.656 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('211d03ae-07fe-4cb4-813e-163f46568b44', N'4A191780-214E-47D6-83B8-4345A61E804C', N'User', N'USER'),
+('a9c2bc35-61fe-4e60-8158-2bfd6e1478eb', N'7DB6149D-F1EE-4A0B-BA7B-D99E41414D73', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-05-19 03:03:47.657 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.658 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.658 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.659 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] ON;
+INSERT INTO [Countries] ([ID], [Name])
+VALUES ('12e15727-d369-49a9-8b13-bc22e9362179', N'USA'),
+('14629847-905a-4a0e-9abe-80b61655c5cb', N'Germany'),
+('501c6d33-1bbe-45f1-8fbd-2275913c6218', N'Sweden'),
+('56bf46a4-02b8-4693-a0f5-0a95e2218bdc', N'England'),
+('8f30bedc-47dd-4286-8950-73d8a68e5d41', N'Italy');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] OFF;
+2024-05-19 03:03:47.666 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] ON;
+INSERT INTO [Countries] ([ID], [Name])
+VALUES ('12e15727-d369-49a9-8b13-bc22e9362179', N'USA'),
+('14629847-905a-4a0e-9abe-80b61655c5cb', N'Germany'),
+('501c6d33-1bbe-45f1-8fbd-2275913c6218', N'Sweden'),
+('56bf46a4-02b8-4693-a0f5-0a95e2218bdc', N'England'),
+('8f30bedc-47dd-4286-8950-73d8a68e5d41', N'Italy');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] OFF;
+2024-05-19 03:03:47.667 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.668 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.668 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.669 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] ON;
+INSERT INTO [Persons] ([ID], [Address], [CountryID], [DateOfBirth], [Email], [Gender], [Name], [ReceiveNewsLetters])
+VALUES ('272d82b2-dfd8-4005-aae5-84ec368a3d28', N'NewYork, st 88', '12e15727-d369-49a9-8b13-bc22e9362179', '1992-09-09T00:00:00.0000000', N'chandler.fake.mail@gmail.com', N'Male', N'Chandler', CAST(0 AS bit)),
+('2917892d-5864-4356-aeea-d1ce7c11155d', N'NewYork, st 89', '12e15727-d369-49a9-8b13-bc22e9362179', '1995-04-04T00:00:00.0000000', N'rachel.fake.mail@gmail.com', N'Female', N'Rachel', CAST(1 AS bit)),
+('29339209-63f5-492f-8459-754943c74abf', N'57449 Brown Way', '12e15727-d369-49a9-8b13-bc22e9362179', '1983-02-16T00:00:00.0000000', N'mjarrell6@wisc.edu', N'Male', N'Maddy', CAST(1 AS bit)),
+('2a6d3738-9def-43ac-9279-0310edc7ceca', N'97570 Raven Circle', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1988-01-04T00:00:00.0000000', N'mlingfoot5@netvibes.com', N'Male', N'Mitchael', CAST(0 AS bit)),
+('3df46ad3-b1ef-4b7e-9a9b-174e25d3571c', N'London, st 49', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1996-02-01T00:00:00.0000000', N'nora.fake.mail@gmail.com', N'Female', N'Nora', CAST(1 AS bit)),
+('59163933-774f-4ecb-bdbc-bd459ea56499', N'London, st 28', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1998-12-08T00:00:00.0000000', N'kevin.fake.mail@gmail.com', N'Male', N'Kevin', CAST(1 AS bit)),
+('59e8021f-5d37-4a98-83a7-01ea39914b02', N'Stockholm, st 58', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '2004-11-11T00:00:00.0000000', N'jill.fake.mail@gmail.com', N'Female', N'kevinJill', CAST(0 AS bit)),
+('a3b9833b-8a4d-43e9-8690-61e08df81a9a', N'9334 Fremont Street', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '1987-01-19T00:00:00.0000000', N'vklussb@nationalgeographic.com', N'Female', N'Verene', CAST(1 AS bit)),
+('c03bbe45-9aeb-4d24-99e0-4743016ffce9', N'4 Parkside Point', '14629847-905a-4a0e-9abe-80b61655c5cb', '1989-08-28T00:00:00.0000000', N'mwebsdale0@people.com.cn', N'Female', N'Marguerite', CAST(0 AS bit)),
+('c6d50a47-f7e6-4482-8be0-4ddfc057fa6e', N'73 Heath Avenue', '14629847-905a-4a0e-9abe-80b61655c5cb', '1995-02-10T00:00:00.0000000', N'fbowsher2@howstuffworks.com', N'Male', N'Franchot', CAST(1 AS bit)),
+('cb035f22-e7cf-4907-bd07-91cfee5240f3', N'484 Clarendon Court', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1997-09-25T00:00:00.0000000', N'lwoodwing9@wix.com', N'Male', N'Lombard', CAST(0 AS bit));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] OFF;
+2024-05-19 03:03:47.679 +03:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] ON;
+INSERT INTO [Persons] ([ID], [Address], [CountryID], [DateOfBirth], [Email], [Gender], [Name], [ReceiveNewsLetters])
+VALUES ('272d82b2-dfd8-4005-aae5-84ec368a3d28', N'NewYork, st 88', '12e15727-d369-49a9-8b13-bc22e9362179', '1992-09-09T00:00:00.0000000', N'chandler.fake.mail@gmail.com', N'Male', N'Chandler', CAST(0 AS bit)),
+('2917892d-5864-4356-aeea-d1ce7c11155d', N'NewYork, st 89', '12e15727-d369-49a9-8b13-bc22e9362179', '1995-04-04T00:00:00.0000000', N'rachel.fake.mail@gmail.com', N'Female', N'Rachel', CAST(1 AS bit)),
+('29339209-63f5-492f-8459-754943c74abf', N'57449 Brown Way', '12e15727-d369-49a9-8b13-bc22e9362179', '1983-02-16T00:00:00.0000000', N'mjarrell6@wisc.edu', N'Male', N'Maddy', CAST(1 AS bit)),
+('2a6d3738-9def-43ac-9279-0310edc7ceca', N'97570 Raven Circle', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1988-01-04T00:00:00.0000000', N'mlingfoot5@netvibes.com', N'Male', N'Mitchael', CAST(0 AS bit)),
+('3df46ad3-b1ef-4b7e-9a9b-174e25d3571c', N'London, st 49', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1996-02-01T00:00:00.0000000', N'nora.fake.mail@gmail.com', N'Female', N'Nora', CAST(1 AS bit)),
+('59163933-774f-4ecb-bdbc-bd459ea56499', N'London, st 28', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1998-12-08T00:00:00.0000000', N'kevin.fake.mail@gmail.com', N'Male', N'Kevin', CAST(1 AS bit)),
+('59e8021f-5d37-4a98-83a7-01ea39914b02', N'Stockholm, st 58', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '2004-11-11T00:00:00.0000000', N'jill.fake.mail@gmail.com', N'Female', N'kevinJill', CAST(0 AS bit)),
+('a3b9833b-8a4d-43e9-8690-61e08df81a9a', N'9334 Fremont Street', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '1987-01-19T00:00:00.0000000', N'vklussb@nationalgeographic.com', N'Female', N'Verene', CAST(1 AS bit)),
+('c03bbe45-9aeb-4d24-99e0-4743016ffce9', N'4 Parkside Point', '14629847-905a-4a0e-9abe-80b61655c5cb', '1989-08-28T00:00:00.0000000', N'mwebsdale0@people.com.cn', N'Female', N'Marguerite', CAST(0 AS bit)),
+('c6d50a47-f7e6-4482-8be0-4ddfc057fa6e', N'73 Heath Avenue', '14629847-905a-4a0e-9abe-80b61655c5cb', '1995-02-10T00:00:00.0000000', N'fbowsher2@howstuffworks.com', N'Male', N'Franchot', CAST(1 AS bit)),
+('cb035f22-e7cf-4907-bd07-91cfee5240f3', N'484 Clarendon Court', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1997-09-25T00:00:00.0000000', N'lwoodwing9@wix.com', N'Male', N'Lombard', CAST(0 AS bit));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] OFF;
+2024-05-19 03:03:47.680 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.681 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.682 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.682 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-05-19 03:03:47.684 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-05-19 03:03:47.685 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.685 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.686 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.686 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-05-19 03:03:47.689 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-05-19 03:03:47.691 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.691 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.692 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.692 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-05-19 03:03:47.693 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-05-19 03:03:47.694 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.695 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.695 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.696 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-05-19 03:03:47.697 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-05-19 03:03:47.698 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.698 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.699 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.699 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-05-19 03:03:47.701 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-05-19 03:03:47.702 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.702 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.703 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.703 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-05-19 03:03:47.704 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-05-19 03:03:47.705 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.706 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.706 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:03:47.707 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-05-19 03:03:47.708 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-05-19 03:03:47.709 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.710 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.710 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.711 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Persons_CountryID] ON [Persons] ([CountryID]);
+2024-05-19 03:03:47.713 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Persons_CountryID] ON [Persons] ([CountryID]);
+2024-05-19 03:03:47.714 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:03:47.714 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.715 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:03:47.715 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240518233336_Initial', N'8.0.5');
+2024-05-19 03:03:47.716 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240518233336_Initial', N'8.0.5');
+2024-05-19 03:03:47.718 +03:30 [DBG] Committing transaction.
+2024-05-19 03:03:47.721 +03:30 [DBG] Committed transaction.
+2024-05-19 03:03:47.722 +03:30 [DBG] Disposing transaction.
+2024-05-19 03:03:47.722 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.723 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:03:47.725 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:03:47.727 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:03:47.727 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-05-19 03:05:19.473 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:06:31.606 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:07:10.108 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:07:32.866 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:07:33.163 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:07:33.167 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:07:33.329 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:07:33.351 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:07:33.353 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:07:33.863 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:07:52.023 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:07:52.326 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:07:52.331 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:07:52.551 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:07:52.573 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:07:52.576 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:07:53.321 +03:30 [DBG] Creating DbConnection.
+2024-05-19 03:07:53.326 +03:30 [DBG] Created DbConnection. (3ms).
+2024-05-19 03:07:53.331 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.354 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.360 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.363 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-19 03:07:54.364 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+2024-05-19 03:07:54.368 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.377 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.380 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.383 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:07:54.385 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:07:54.386 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:07:54.386 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:07:54.387 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.388 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.389 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.399 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.401 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.401 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.409 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.410 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.411 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:07:54.411 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:07:54.412 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-05-19 03:07:54.412 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:07:54.415 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:07:54.418 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.419 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2024-05-19 03:07:54.419 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.420 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.422 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.422 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.423 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.424 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.424 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.425 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.426 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.427 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.428 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.429 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.430 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:07:54.431 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:07:54.432 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2024-05-19 03:07:54.432 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.433 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.434 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.435 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.437 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.438 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.439 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.439 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.440 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.440 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.441 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.448 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.450 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:07:54.451 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.451 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.452 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:07:54.453 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:07:54.453 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:07:54.454 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.456 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.456 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.458 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:07:54.460 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.460 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.461 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.461 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.462 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:07:54.462 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:07:54.463 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:07:54.463 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:07:54.465 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:07:54.467 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.467 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2024-05-19 03:07:54.468 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.468 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.472 +03:30 [INF] Reverting migration '20240518233336_Initial'.
+2024-05-19 03:07:54.479 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.480 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.482 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-19 03:07:54.487 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-19 03:07:54.488 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.488 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.490 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.490 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoleClaims];
+2024-05-19 03:07:54.493 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoleClaims];
+2024-05-19 03:07:54.494 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.495 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.496 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.496 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserClaims];
+2024-05-19 03:07:54.498 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserClaims];
+2024-05-19 03:07:54.499 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.500 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.501 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.501 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserLogins];
+2024-05-19 03:07:54.503 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserLogins];
+2024-05-19 03:07:54.505 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.505 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.506 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.506 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserRoles];
+2024-05-19 03:07:54.508 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserRoles];
+2024-05-19 03:07:54.509 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.510 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.510 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.511 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserTokens];
+2024-05-19 03:07:54.513 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserTokens];
+2024-05-19 03:07:54.518 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.518 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.519 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.519 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Persons];
+2024-05-19 03:07:54.522 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Persons];
+2024-05-19 03:07:54.523 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.524 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.524 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.525 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoles];
+2024-05-19 03:07:54.526 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoles];
+2024-05-19 03:07:54.527 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.528 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.528 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.529 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUsers];
+2024-05-19 03:07:54.531 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUsers];
+2024-05-19 03:07:54.532 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.533 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.533 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.534 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Countries];
+2024-05-19 03:07:54.536 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Countries];
+2024-05-19 03:07:54.537 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:07:54.537 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:07:54.538 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:07:54.538 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240518233336_Initial';
+2024-05-19 03:07:54.539 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240518233336_Initial';
+2024-05-19 03:07:54.541 +03:30 [DBG] Committing transaction.
+2024-05-19 03:07:54.544 +03:30 [DBG] Committed transaction.
+2024-05-19 03:07:54.546 +03:30 [DBG] Disposing transaction.
+2024-05-19 03:07:54.546 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.547 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:07:54.551 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:07:54.553 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:07:54.554 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-05-19 03:08:04.443 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:08:04.723 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:08:04.726 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:08:04.885 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:08:04.905 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:08:04.907 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:08:05.533 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:08:15.098 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-19 03:08:15.419 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-05-19 03:08:15.424 +03:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-05-19 03:08:15.646 +03:30 [DBG] Entity Framework Core 8.0.5 initialized 'PersonsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-19 03:08:15.657 +03:30 [DBG] Creating DbConnection.
+2024-05-19 03:08:15.664 +03:30 [DBG] Created DbConnection. (3ms).
+2024-05-19 03:08:15.668 +03:30 [DBG] Migrating using database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:15.671 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.693 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.698 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.702 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-19 03:08:16.703 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2024-05-19 03:08:16.709 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:08:16.718 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:08:16.720 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.724 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:08:16.728 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:08:16.729 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:08:16.730 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2024-05-19 03:08:16.731 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.732 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.733 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:08:16.742 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:08:16.744 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.745 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-05-19 03:08:16.746 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.747 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.748 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.749 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.749 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.750 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:08:16.753 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 03:08:16.754 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.755 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:08:16.756 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-19 03:08:16.756 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-19 03:08:16.757 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-19 03:08:16.758 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.759 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.760 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:08:16.762 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 03:08:16.763 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.763 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:08:16.773 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.774 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.775 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-19 03:08:16.775 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:08:16.776 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-05-19 03:08:16.777 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:08:16.780 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 03:08:16.782 +03:30 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.783 +03:30 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2024-05-19 03:08:16.784 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.785 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:08:16.792 +03:30 [INF] Applying migration '20240518233805_Initial'.
+2024-05-19 03:08:16.855 +03:30 [DBG] Executing 2 update commands as a batch.
+2024-05-19 03:08:16.862 +03:30 [DBG] Executing 5 update commands as a batch.
+2024-05-19 03:08:16.864 +03:30 [DBG] Executing 11 update commands as a batch.
+2024-05-19 03:08:16.867 +03:30 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.868 +03:30 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:16.871 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-19 03:08:16.876 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-19 03:08:16.878 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.878 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.880 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.881 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-05-19 03:08:16.883 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-05-19 03:08:16.884 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.885 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.885 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.886 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [PersonName] nvarchar(max) NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-05-19 03:08:16.888 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [PersonName] nvarchar(max) NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-05-19 03:08:16.889 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.890 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.891 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.892 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(20) NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([ID])
+);
+2024-05-19 03:08:16.894 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(20) NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([ID])
+);
+2024-05-19 03:08:16.895 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.895 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.896 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.897 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.900 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.901 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.902 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.903 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.904 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.908 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.909 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.910 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.911 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.912 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.916 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.917 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.917 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.918 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.919 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.923 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.924 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.924 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.925 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.926 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.928 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.929 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.930 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.930 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.931 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Persons] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    [Email] nvarchar(50) NOT NULL,
+    [DateOfBirth] datetime2 NULL,
+    [Gender] nvarchar(10) NOT NULL,
+    [Address] nvarchar(200) NULL,
+    [ReceiveNewsLetters] bit NOT NULL,
+    [TINumber] varchar(11) NULL DEFAULT 'ABCDEFGH123',
+    [CountryID] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Persons] PRIMARY KEY ([ID]),
+    CONSTRAINT [CHK_TINumber] CHECK (len([TINumber]) = 11),
+    CONSTRAINT [FK_Persons_Countries_CountryID] FOREIGN KEY ([CountryID]) REFERENCES [Countries] ([ID]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.933 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Persons] (
+    [ID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    [Email] nvarchar(50) NOT NULL,
+    [DateOfBirth] datetime2 NULL,
+    [Gender] nvarchar(10) NOT NULL,
+    [Address] nvarchar(200) NULL,
+    [ReceiveNewsLetters] bit NOT NULL,
+    [TINumber] varchar(11) NULL DEFAULT 'ABCDEFGH123',
+    [CountryID] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Persons] PRIMARY KEY ([ID]),
+    CONSTRAINT [CHK_TINumber] CHECK (len([TINumber]) = 11),
+    CONSTRAINT [FK_Persons_Countries_CountryID] FOREIGN KEY ([CountryID]) REFERENCES [Countries] ([ID]) ON DELETE CASCADE
+);
+2024-05-19 03:08:16.935 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.935 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.936 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.936 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('211d03ae-07fe-4cb4-813e-163f46568b44', N'4A191780-214E-47D6-83B8-4345A61E804C', N'User', N'USER'),
+('a9c2bc35-61fe-4e60-8158-2bfd6e1478eb', N'7DB6149D-F1EE-4A0B-BA7B-D99E41414D73', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-05-19 03:08:16.939 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('211d03ae-07fe-4cb4-813e-163f46568b44', N'4A191780-214E-47D6-83B8-4345A61E804C', N'User', N'USER'),
+('a9c2bc35-61fe-4e60-8158-2bfd6e1478eb', N'7DB6149D-F1EE-4A0B-BA7B-D99E41414D73', N'Admin', N'ADMIN');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-05-19 03:08:16.940 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.941 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.941 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.942 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] ON;
+INSERT INTO [Countries] ([ID], [Name])
+VALUES ('12e15727-d369-49a9-8b13-bc22e9362179', N'USA'),
+('14629847-905a-4a0e-9abe-80b61655c5cb', N'Germany'),
+('501c6d33-1bbe-45f1-8fbd-2275913c6218', N'Sweden'),
+('56bf46a4-02b8-4693-a0f5-0a95e2218bdc', N'England'),
+('8f30bedc-47dd-4286-8950-73d8a68e5d41', N'Italy');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] OFF;
+2024-05-19 03:08:16.949 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] ON;
+INSERT INTO [Countries] ([ID], [Name])
+VALUES ('12e15727-d369-49a9-8b13-bc22e9362179', N'USA'),
+('14629847-905a-4a0e-9abe-80b61655c5cb', N'Germany'),
+('501c6d33-1bbe-45f1-8fbd-2275913c6218', N'Sweden'),
+('56bf46a4-02b8-4693-a0f5-0a95e2218bdc', N'England'),
+('8f30bedc-47dd-4286-8950-73d8a68e5d41', N'Italy');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Name') AND [object_id] = OBJECT_ID(N'[Countries]'))
+    SET IDENTITY_INSERT [Countries] OFF;
+2024-05-19 03:08:16.951 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.951 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.951 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.952 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] ON;
+INSERT INTO [Persons] ([ID], [Address], [CountryID], [DateOfBirth], [Email], [Gender], [Name], [ReceiveNewsLetters])
+VALUES ('272d82b2-dfd8-4005-aae5-84ec368a3d28', N'NewYork, st 88', '12e15727-d369-49a9-8b13-bc22e9362179', '1992-09-09T00:00:00.0000000', N'chandler.fake.mail@gmail.com', N'Male', N'Chandler', CAST(0 AS bit)),
+('2917892d-5864-4356-aeea-d1ce7c11155d', N'NewYork, st 89', '12e15727-d369-49a9-8b13-bc22e9362179', '1995-04-04T00:00:00.0000000', N'rachel.fake.mail@gmail.com', N'Female', N'Rachel', CAST(1 AS bit)),
+('29339209-63f5-492f-8459-754943c74abf', N'57449 Brown Way', '12e15727-d369-49a9-8b13-bc22e9362179', '1983-02-16T00:00:00.0000000', N'mjarrell6@wisc.edu', N'Male', N'Maddy', CAST(1 AS bit)),
+('2a6d3738-9def-43ac-9279-0310edc7ceca', N'97570 Raven Circle', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1988-01-04T00:00:00.0000000', N'mlingfoot5@netvibes.com', N'Male', N'Mitchael', CAST(0 AS bit)),
+('3df46ad3-b1ef-4b7e-9a9b-174e25d3571c', N'London, st 49', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1996-02-01T00:00:00.0000000', N'nora.fake.mail@gmail.com', N'Female', N'Nora', CAST(1 AS bit)),
+('59163933-774f-4ecb-bdbc-bd459ea56499', N'London, st 28', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1998-12-08T00:00:00.0000000', N'kevin.fake.mail@gmail.com', N'Male', N'Kevin', CAST(1 AS bit)),
+('59e8021f-5d37-4a98-83a7-01ea39914b02', N'Stockholm, st 58', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '2004-11-11T00:00:00.0000000', N'jill.fake.mail@gmail.com', N'Female', N'kevinJill', CAST(0 AS bit)),
+('a3b9833b-8a4d-43e9-8690-61e08df81a9a', N'9334 Fremont Street', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '1987-01-19T00:00:00.0000000', N'vklussb@nationalgeographic.com', N'Female', N'Verene', CAST(1 AS bit)),
+('c03bbe45-9aeb-4d24-99e0-4743016ffce9', N'4 Parkside Point', '14629847-905a-4a0e-9abe-80b61655c5cb', '1989-08-28T00:00:00.0000000', N'mwebsdale0@people.com.cn', N'Female', N'Marguerite', CAST(0 AS bit)),
+('c6d50a47-f7e6-4482-8be0-4ddfc057fa6e', N'73 Heath Avenue', '14629847-905a-4a0e-9abe-80b61655c5cb', '1995-02-10T00:00:00.0000000', N'fbowsher2@howstuffworks.com', N'Male', N'Franchot', CAST(1 AS bit)),
+('cb035f22-e7cf-4907-bd07-91cfee5240f3', N'484 Clarendon Court', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1997-09-25T00:00:00.0000000', N'lwoodwing9@wix.com', N'Male', N'Lombard', CAST(0 AS bit));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] OFF;
+2024-05-19 03:08:16.958 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] ON;
+INSERT INTO [Persons] ([ID], [Address], [CountryID], [DateOfBirth], [Email], [Gender], [Name], [ReceiveNewsLetters])
+VALUES ('272d82b2-dfd8-4005-aae5-84ec368a3d28', N'NewYork, st 88', '12e15727-d369-49a9-8b13-bc22e9362179', '1992-09-09T00:00:00.0000000', N'chandler.fake.mail@gmail.com', N'Male', N'Chandler', CAST(0 AS bit)),
+('2917892d-5864-4356-aeea-d1ce7c11155d', N'NewYork, st 89', '12e15727-d369-49a9-8b13-bc22e9362179', '1995-04-04T00:00:00.0000000', N'rachel.fake.mail@gmail.com', N'Female', N'Rachel', CAST(1 AS bit)),
+('29339209-63f5-492f-8459-754943c74abf', N'57449 Brown Way', '12e15727-d369-49a9-8b13-bc22e9362179', '1983-02-16T00:00:00.0000000', N'mjarrell6@wisc.edu', N'Male', N'Maddy', CAST(1 AS bit)),
+('2a6d3738-9def-43ac-9279-0310edc7ceca', N'97570 Raven Circle', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1988-01-04T00:00:00.0000000', N'mlingfoot5@netvibes.com', N'Male', N'Mitchael', CAST(0 AS bit)),
+('3df46ad3-b1ef-4b7e-9a9b-174e25d3571c', N'London, st 49', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1996-02-01T00:00:00.0000000', N'nora.fake.mail@gmail.com', N'Female', N'Nora', CAST(1 AS bit)),
+('59163933-774f-4ecb-bdbc-bd459ea56499', N'London, st 28', '56bf46a4-02b8-4693-a0f5-0a95e2218bdc', '1998-12-08T00:00:00.0000000', N'kevin.fake.mail@gmail.com', N'Male', N'Kevin', CAST(1 AS bit)),
+('59e8021f-5d37-4a98-83a7-01ea39914b02', N'Stockholm, st 58', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '2004-11-11T00:00:00.0000000', N'jill.fake.mail@gmail.com', N'Female', N'kevinJill', CAST(0 AS bit)),
+('a3b9833b-8a4d-43e9-8690-61e08df81a9a', N'9334 Fremont Street', '501c6d33-1bbe-45f1-8fbd-2275913c6218', '1987-01-19T00:00:00.0000000', N'vklussb@nationalgeographic.com', N'Female', N'Verene', CAST(1 AS bit)),
+('c03bbe45-9aeb-4d24-99e0-4743016ffce9', N'4 Parkside Point', '14629847-905a-4a0e-9abe-80b61655c5cb', '1989-08-28T00:00:00.0000000', N'mwebsdale0@people.com.cn', N'Female', N'Marguerite', CAST(0 AS bit)),
+('c6d50a47-f7e6-4482-8be0-4ddfc057fa6e', N'73 Heath Avenue', '14629847-905a-4a0e-9abe-80b61655c5cb', '1995-02-10T00:00:00.0000000', N'fbowsher2@howstuffworks.com', N'Male', N'Franchot', CAST(1 AS bit)),
+('cb035f22-e7cf-4907-bd07-91cfee5240f3', N'484 Clarendon Court', '8f30bedc-47dd-4286-8950-73d8a68e5d41', '1997-09-25T00:00:00.0000000', N'lwoodwing9@wix.com', N'Male', N'Lombard', CAST(0 AS bit));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ID', N'Address', N'CountryID', N'DateOfBirth', N'Email', N'Gender', N'Name', N'ReceiveNewsLetters') AND [object_id] = OBJECT_ID(N'[Persons]'))
+    SET IDENTITY_INSERT [Persons] OFF;
+2024-05-19 03:08:16.960 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.960 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.961 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.961 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-05-19 03:08:16.963 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-05-19 03:08:16.964 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.965 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.965 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.966 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-05-19 03:08:16.969 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-05-19 03:08:16.970 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.970 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.971 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.972 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-05-19 03:08:16.974 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-05-19 03:08:16.975 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.975 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.976 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.976 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-05-19 03:08:16.978 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-05-19 03:08:16.979 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.979 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.980 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.980 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-05-19 03:08:16.982 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-05-19 03:08:16.983 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.983 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.983 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.984 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-05-19 03:08:16.986 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-05-19 03:08:16.987 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.988 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.988 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.989 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-05-19 03:08:16.990 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-05-19 03:08:16.991 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.992 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.992 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.993 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Persons_CountryID] ON [Persons] ([CountryID]);
+2024-05-19 03:08:16.996 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Persons_CountryID] ON [Persons] ([CountryID]);
+2024-05-19 03:08:16.997 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-19 03:08:16.997 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-19 03:08:16.998 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-19 03:08:16.999 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240518233805_Initial', N'8.0.5');
+2024-05-19 03:08:17.000 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240518233805_Initial', N'8.0.5');
+2024-05-19 03:08:17.002 +03:30 [DBG] Committing transaction.
+2024-05-19 03:08:17.005 +03:30 [DBG] Committed transaction.
+2024-05-19 03:08:17.006 +03:30 [DBG] Disposing transaction.
+2024-05-19 03:08:17.007 +03:30 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:17.007 +03:30 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-05-19 03:08:17.009 +03:30 [DBG] 'PersonsDbContext' disposed.
+2024-05-19 03:08:17.010 +03:30 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2024-05-19 03:08:17.011 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
